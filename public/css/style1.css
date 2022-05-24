@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #ffffff;
+}
+.card-body{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  top: 25%;
+}
+/*Bagian Header*/
+.logo {
+  display: flex;
+  flex-flow: column;
+  padding: 1%;
+  text-align: center;
+}
+
+img {
+  height: 70px;
+  left: 51px;
+  top: -1px;
+  border-radius: 0px;
+}
+
+.web-icon {
+    width: 100px;
+    height: 50px;
+}
+
+#navContainer {
+  display: flex;
+  flex-flow: row-reverse;
+  text-align: center;
+}
+
+li a {
+  color: rgb(0, 0, 0);
+  font-weight:500;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+ul {
+  margin-right: 0%;
+}
+
+#searchBox {
+  margin-left: -25px;
+}
+
+.search-container {
+  display: inline-block;
+}
+
+.search-container .search {
+  transition: all 1s;
+  z-index: 4;
+  position: relative;
+  display: inline-block;
+  height: 60px;
+  width: 50px;
+  vertical-align: middle;
+  right: -55px;
+}
+
+.search-container .search:hover {
+  cursor: pointer;
+}
+
+.search-container .search::before {
+  content: "";
+  position: absolute;
+  top: 32px;
+  right: 0;
+  bottom: 0;
+  left: 25px;
+  width: 9px;
+  height: 2px;
+  background: rgb(166, 166, 166);
+  transform: rotate(45deg);
+  transition: all .5s;
+}
+
+.search-container .search::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: 0;
+  bottom: 0;
+  left: 5px;
+  width: 21px;
+  height: 23px;
+  border-radius: 50%;
+  border: 2px solid rgb(166, 166, 166);
+  transition: all .5s;
+}
+
+.search-container input {
+  width: 30px;
+  height: 35px;
+  outline: none;
+  border-bottom: 1px solid #ccc;
+  color: #282828;
+  padding: 0;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  transition: all 1s;
+  opacity: 0;
+  z-index: 5;
+  font-weight: normal;
+  letter-spacing: 0.1em;
+  box-sizing: border-box;
+}
+
+.search-container input:hover {
+  cursor: pointer;
+  background-color: rgba(208, 208, 208, 0.31);
+}
+
+.search-container.active input {
+  width: 250px;
+  opacity: 1;
+  cursor: text;
+  padding: 0 0 0 50px;
+}
+
+.search-container .close {
+  transition: all 1s;
+  z-index: 4;
+  position: relative;
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  vertical-align: middle;
+  right: 55px;
+  visibility: hidden;
+}
+
+.search-container.active input~.close {
+  right: 55px;
+  z-index: 6;
+  visibility: visible;
+}
+
+.search-container.active input~.close::before {
+  content: "";
+  top: 23px;
+  left: 17px;
+  width: 20px;
+  position: absolute;
+  height: 1px;
+  background: #ccc;
+  transform: rotate(45deg);
+  transition: all .5s;
+  margin-top: -5px;
+}
+
+.search-container.active input~.close::after {
+  content: "";
+  top: 23px;
+  left: 17px;
+  width: 20px;
+  height: 1px;
+  background: #ccc;
+  transform: rotate(-45deg);
+  position: absolute;
+  transition: all .5s;
+  margin-top: -5px;
+}
+
+.search-container input::placeholder {
+  color: #898989;
+  opacity: 0.5;
+  font-weight: 350;
+}
+
+.search-container .input-box {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+/*Bagian image selamat datang*/
+.img-fluid {
+  width: 100%;
+  height: 500px;
+}
+
+.jumbotron {
+  background-color: #F0F0F0;
+}
+
+#btnImg {
+  background: transparent;
+  border-radius: 10px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  margin-right: -50%;
+  top: 35%;
+  left: 50%;
+  font-weight: bold;
+  color: rgb(224, 224, 221);
+  font-size: 50px;
+}
+
+#btnImg:hover {
+  background-color: rgba(181, 180, 153, 0.14);
+}
+
+#cardImg {
+  background: transparent;
+  position: absolute;
+  border: 0;
+  transform: translate(-50%, -50%);
+  margin-right: -50%;
+  top: 75%;
+  left: 50%;
+  width: 25rem;
+  font-weight: normal;
+  text-align: center;
+  color: rgb(224, 224, 221);
+}
+
+.gambar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Bagian Section*/
+.indexSection p {
+  margin-bottom: 10px;
+  font-family: sans-serif;
+  text-align: left;
+}
+
+#seContainer {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+}
+
+#btnSection {
+  float: right;
+  background: transparent;
+  border-color: rgba(81, 186, 227, 0.87);
+  color: rgba(81, 186, 227, 0.87);
+}
+
+#btnSection:hover {
+  background-color: rgba(81, 186, 227, 0.1);
+}
+
+ul li {
+  margin: 0;
+  display: inline-block;
+  text-align: center;
+}
+
+.fab {
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+}

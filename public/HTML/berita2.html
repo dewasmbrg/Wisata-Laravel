@@ -1,0 +1,256 @@
+<!--
+Kelompok 11
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="../Image/w.jpg">
+    <link href="../Bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../CSS/style.css" rel="stylesheet">
+    <link href="../Bootstrap/bootstrap-grid.css" rel="stylesheet">
+    <link href="../Bootstrap/bootstrap-grid.min.css" rel="stylesheet">
+    <link href="../Bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="../Bootstrap/css/glyphicon.css" rel="stylesheet">
+    <link href="../Jquery/jquery-ui.css" rel="stylesheet">
+    <script src="../Jquery/jquery-3.5.1.min.js"></script>
+    <script src="../Jquery/jquery-ui.js"></script>
+    <script src="../Jquery/jquery.js"></script>
+    <script src="../Javascript/berita.js"></script>
+    <script src="../Bootstrap/js/bootstrap.min.js"></script>
+    <script src="../Javascript/index.js"></script>
+    <script src="https://kit.fontawesome.com/5d064eb21d.js" crossorigin="anonymous"></script>
+    <title>Wisata Sumatera/berita</title>
+
+
+</head>
+<style>
+    @media (max-width: 650px) {
+        #container {
+            width: 100%;
+        }
+        p {
+            font-size: 3.5em;
+        }
+    }
+    
+    a {
+        text-decoration: none;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        transition: all 0.5s;
+    }
+    
+    .link,
+    .link:hover,
+    .link:focus,
+    .link:active {
+        text-decoration: none;
+        color: inherit;
+    }
+    
+    .sideImg {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 15%;
+        width: 65%;
+    }
+    
+    h6 {
+        margin-left: 14%;
+        font-weight: 500;
+    }
+    
+    #linkSide {
+        text-decoration: none;
+        color: rgb(65, 152, 182);
+    }
+    
+    #linkSide :hover,
+    #linkSide:focus,
+    #linkSide:active {
+        color: red;
+    }
+    
+    #sideContainer {
+        height: 150px;
+        width: 240px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .pSide {
+        color: white;
+    }
+</style>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a href="index.html">
+                <img src="logo.svg" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="fa fa-fw fa-home"></i>Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="wisata.html"><i class="fas fa-plane-departure"></i>Wisata</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="active" href="berita.html"><i class="far fa-newspaper"></i>Berita</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html"><i class="far fa-address-card"></i>About Us</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="search"><i class="fa fa-fw fa-search"></i>Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="container my-4">
+            <div id="carouselExample1" class="carousel slide z-depth-1-half" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100 img-fluid" src="../image/danau.jpg" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100 img-fluid" src="../Image/danau1.jpg" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100 img-fluid" src="../Image/danau2.jpg" alt="Third slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExample1" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExample1" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+                <div class="carousel-caption">
+                    <div class="animated fadeInDown">
+                        <h1 class="h1-responsive">
+                            <a href="https://en.wikipedia.org/wiki/Red"></a>Selamat Datang</h1>
+                        <p>Di Website Wisata Sumatera</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><br>
+
+    <div class="row" style="margin-top: 5%;">
+        <div class="col-12 col-md-9" style="display: flex; flex-wrap: wrap;">
+            <div class="col-md-4" style="margin-bottom: 4%;">
+                <img src="../Image/jln.jpg" style="width: 100%; height: 100%;">
+            </div>
+
+            <div class="col-md-8" style="margin-bottom: 4%;">
+                <h4 style="font-family: Lato, sans-serif;">Pembangunan Jalon Tol Trans Sumatera</h4>
+                <p style="font-size: 15px;">Pada 20 Februari 2012, Menteri Badan Usaha Milik Negara Dahlan Iskan mengadakan pertemuan dengan para gubernur se-Sumatra di Griya Agung, Palembang, Sumatra Selatan. Pertemuan ini membahas percepatan pembangunan jalan tol di Sumatra.</p>
+                <a href="berita_jalanTolSumatera.html" class="link"><button type="button" class="btn btn-outline-dark">Baca Selengkapnya</button></a>
+            </div>
+
+            <div class="col-md-4" style="margin-bottom: 4%;">
+                <img src="../Image/banjir.jpg" style="width: 100%; height: 100%;">
+            </div>
+
+            <div class="col-md-8" style="margin-bottom: 4%;">
+                <h4 style="font-family: Lato, sans-serif;">Ribuan Rumah di Medan Terendam Banjir, Dua Orang Tewas</h4>
+                <p style="font-size: 15px;">Hujan mengguyur Kota Medan, pada Kamis malam, 3 Desember 2020, sekitar pukul 21.00 WIB. Akibatnya, tercatat sebanyak 2.773 rumah warga di kota terbesar nomor tiga di Indonesia ini terendam banjir dengan ketinggian air hingga mencapai 3
+                    meter.
+                </p>
+                <a href="berita_banjir.html" class="link"><button type="button" class="btn btn-outline-dark">Baca Selengkapnya</button></a>
+            </div>
+
+            <div class="col-md-4" style="margin-bottom: 4%;">
+                <img src="../Image/kapal_KM.jpg" style="width: 100%; height: 100%;">
+            </div>
+
+            <div class="col-md-8" style="margin-bottom: 4%;">
+                <h4 style="font-family: Lato, sans-serif;">Tenggelamnya Kapal KM Sinar Bangun, 3 Orang Tewas 164 Orang Dinyatakan Hilang</h4>
+                <p style="font-size: 15px;">KM Sinar Bangun berlayar dari Pelabuhan Simanindo di Kabupaten Samosir, yang terletak di Pulau Samosir, menuju Pelabuhan Tigaras di Kabupaten Simalungun. Laporan dari pihak terkait menunjukkan bahwa penumpang yang menaiki kapal ini adalah
+                    wisatawan yang mengunjungi kawasan Danau Toba pada masa libur Hari Raya Idulfitri 1439H.</p>
+                <a href="berita_danauToba.html" class="link"><button type="button" class="btn btn-outline-dark">Baca Selengkapnya</button></a>
+            </div>
+        </div>
+
+        <div class="col-6 col-md-3" style="background-color: rgba(211, 211, 211, 0.74); border-radius: 20px; padding-top: 20px;">
+            <a href="berita_bule.html">
+                <div class="container" id="sideContainer" style="background-image: url('../Image/bule_kesasar.jpg'); color: white;">
+                    <br><br><br><br> Turis Asing yang Tak Tahu Bali dan Sumatra 1 Negara
+                </div>
+            </a>
+            <br>
+            <a href="berita_destinasi wisata.html">
+                <div class="container" id="sideContainer" style="background-image: url('../Image/destinasi_wisata.jpg'); color: white;">
+                    <br><br><br><br> Wisata Indonesia Bisa Dibuka Lagi di Era New Normal
+                </div>
+            </a>
+            <br>
+            <a href="berita_hari pariwisata.html">
+                <div class="container" id="sideContainer" style="background-image: url('../Image/wisata_sedunia.jpg'); color: white;">
+                    <br><br><br><br> Peran Wanita Dalam Sektor Wisata
+                </div>
+            </a>
+            <br>
+            <a href="berita_holbung.html">
+                <div class="container" id="sideContainer" style="background-image: url('../Image/bukit_holbung.jpg'); color: white;">
+                    <br><br><br><br> Bukit Holbung, Keindahan Alam dari Sumatera
+                </div>
+            </a>
+            <br>
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item">
+                        <a class="page-link" href="#" tabindex="-1">Previous</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="berita.html">1</a></li>
+                    <li class="page-item"><a class="page-link" href="berita2.html">2</a></li>
+                    <li class="page-item"><a class="page-link" href="berita3.html">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="footer" style="margin-top:10%">
+        <div class="container" id="fotContainer">
+            <ul>
+                <li id="iconFooter"><a href="https://www.youtube.com/channel/UCviZmDYVb6CPyrb0PGnlvWg?view_as=subscriber" target="blink"><i class="fab fa-youtube"></i></a></li>
+                <li id="iconFooter"><a href="https://twitter.com/PariwisataSuma2" target="blink"><i class="fab fa-twitter"></i></a></li>
+                <li id="iconFooter"><a href="https://www.instagram.com/pariwisatasumatera_official/" target="blink"><i class="fab fa-instagram"></i></a></li>
+                <li id="iconFooter"><a href="https://www.facebook.com/pariwisata.sumatera.9/" target="blink"><i class="fab fa-facebook-f"></i></a></li>
+            </ul>
+        </div>
+        <div class="container" id="fotContainer2">
+            <ul>
+                <li><a href="#" id="aFooter">About Us</a></li>
+                <li><a href="faq.html" id="aFooter" target="blink">FAQs</a></li>
+                <li><a href="https://api.whatsapp.com/send?phone=6281396196984" id="aFooter" target="blink">Contact</a></li>
+            </ul>
+        </div>
+        <p id="pFooter">&copy; 2020 D3TI2 | Kelompok 11</p>
+    </div>
+
+</body>
+
+</html>

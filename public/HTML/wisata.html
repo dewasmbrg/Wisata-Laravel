@@ -1,0 +1,2240 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Wisata Sumatera/search</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="../Image/w.jpg">
+    <link href="../Bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../CSS/style.css" rel="stylesheet">
+    <link href="../Bootstrap/bootstrap-grid.css" rel="stylesheet">
+    <link href="../Bootstrap/bootstrap-grid.min.css" rel="stylesheet">
+    <link href="../Bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="../Bootstrap/css/glyphicon.css" rel="stylesheet">
+    <link href="../Jquery/jquery-ui.css" rel="stylesheet">
+    <script src="../Jquery/jquery-3.5.1.min.js"></script>
+    <script src="../Jquery/jquery-ui.js"></script>
+    <script src="../Jquery/jquery.js"></script>
+    <script src="../Javascript/dialogWisata.js"></script>
+    <script src="../Bootstrap/js/bootstrap.min.js"></script>
+    <script src="../Javascript/index.js"></script>
+    <script src="https://kit.fontawesome.com/5d064eb21d.js" crossorigin="anonymous"></script>
+
+    <style>
+        #imgWisata {
+            height: 170px;
+        }
+        
+        #modal-kotak {
+            margin: 5% 30% 30% 30%;
+            width: 500px;
+            height: 200px;
+            position: absolute;
+            position: fixed;
+            z-index: 1002;
+            display: none;
+            background: white;
+        }
+        
+        #atas {
+            font-size: 15pt;
+            padding: 20px;
+            height: 80%;
+        }
+        
+        #bawah {
+            background: #fff;
+        }
+        
+        #tombol-tutup {
+            background: #e74c3c;
+        }
+        
+        #tombol-tutup,
+        #tombol {
+            height: 30px;
+            width: 100px;
+            color: #fff;
+            border: 0px;
+        }
+        
+        #bg {
+            opacity: .80;
+            position: absolute;
+            display: none;
+            position: fixed;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            z-index: 1001;
+            opacity: 0.8;
+        }
+        
+        #tombol {
+            background: #e74c3c;
+        }
+        
+        #containerBtn {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: flex-start;
+        }
+        
+        #kotaContainer {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        #kotaContainer1 {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        #kotaContainer2 {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        #kotaContainer3 {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        #kotaContainer4 {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        #kotaContainer5 {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        #kotaContainer6 {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        #kotaContainer7 {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        #kotaContainer8 {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        #kotaContainer9 {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        #tombol_form {
+            height: 37px;
+        }
+        
+        #tombol_form1 {
+            height: 37px;
+        }
+        
+        #tombol_form2 {
+            height: 37px;
+        }
+        
+        #tombol_form3 {
+            height: 37px;
+        }
+        
+        #tombol_form4 {
+            height: 37px;
+        }
+        
+        #tombol_form5 {
+            height: 37px;
+        }
+        
+        #tombol_form6 {
+            height: 37px;
+        }
+        
+        #tombol_form7 {
+            height: 37px;
+        }
+        
+        #tombol_form8 {
+            height: 37px;
+        }
+        
+        #tombol_form9 {
+            height: 37px;
+        }
+    </style>
+</head>
+
+<body>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a href="index.html">
+            <img src="logo.svg" class="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html"><i class="fa fa-fw fa-home"></i>Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="active" href="wisata.html"><i class="fas fa-plane-departure"></i>Wisata</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="berita.html"><i class="far fa-newspaper"></i>Berita</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html"><i class="far fa-address-card"></i>About Us</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="search"><i class="fa fa-fw fa-search"></i>Search</button>
+            </form>
+        </div>
+    </nav>
+    </header>
+
+
+    <div class="container">
+        <div class="container my-4">
+            <div id="carouselExample1" class="carousel slide z-depth-1-half" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100 img-fluid" src="../image/danau.jpg" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100 img-fluid" src="../Image/danau1.jpg" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100 img-fluid" src="../Image/danau2.jpg" alt="Third slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExample1" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExample1" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+                <div class="carousel-caption">
+                    <div class="animated fadeInDown">
+                        <h1 class="h1-responsive">Selamat Datang</h1>
+                        <p>Di Website Wisata Sumatera</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="secWisata">
+        <div class="accordion" id="accordionExample">
+            <div class="card">
+                <div class="card-header" id="headingOne" style="background: linear-gradient(to right, #e6e6e6,#e6e6e6);">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" style="background-color:rgb(103, 109, 109); color: white;">
+                    <b>Sumatera Utara</b>
+                  </button>
+                    </h2>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <div class="card" style="width: 100%;">
+                            <img src="../Image/danau1.jpg" class="card-img-top" alt="..." id="imgWisata" style="height: 450px;">
+                            <h3>Danau Toba</h3>
+                            <p>Danau Toba menjadi salah satu destinasi wisata favorit di Indonesia. Bukan hal yang mengejutkan karena daya tarik danau yang berada di provinsi Sumatera Utara tersebut memang luar biasa. Destinasi wisata di Danau Toba pun cukup
+                                beragam karena lanskap dan kreativitas warganya, yang menjadikan danau terbesar di Indonesia dan Asia Tenggara tersebut sebagai salah satu must visit tourism spot di Sumatera Utara.</p>
+                            <div class="container" id="containerBtn">
+                                <input type="button" id="btnShowPopup0" value="Baca Selengkapnya" class="btn btn-info btn-lg" style="width: 160px; height: 40px; font-size: 15px;" />
+                                <!-- Modal Popup -->
+                                <div id="MyPopup0" class="modal fade" role="dialog">
+                                    <div class="modal-dialog">
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">
+                                                &times;</button>
+                                            </div>
+                                            <div>
+                                                <img src="../Image/danau3.jpg" style="height: 150px; width: 100%;">
+                                                <br>Indonesia memang patut berbangga memiliki Danau Toba. Danau terbesar di Indonesia dan Asia Tenggara ini punya banyak pesona alam yang super indah. Terletak di Sumatera Utara, danau ini dikelilingi oleh
+                                                bukit barisan dan pulau vulkanik yang berada di tengahnya, Pulau Samosir.Danau Toba adalah lokasi letusan gunung berapi super masif berkekuatan VEI 8 sekitar 69.000 sampai 77.000 tahun yang lalu yang memicu
+                                                perubahan iklim global. Metode penanggalan terkini menetapkan bahwa 74.000 tahun yang lalu lebih akurat.Letusan ini merupakan letusan eksplosif terbesar di Bumi dalam kurun 25 juta tahun terakhir. Menurut
+                                                teori bencana Toba, letusan ini berdampak besar bagi populasi manusia di seluruh dunia; dampak letusan menewaskan sebagian besar manusia yang hidup waktu itu dan diyakini menyebabkan penyusutan populasi
+                                                di Afrika timur tengah dan India sehingga memengaruhi genetika populasi manusia di seluruh dunia sampai sekarang.
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal">
+                                                Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="button" id="btnShowPopup01" value="Kuliner" class="btn btn-info btn-lg" style="width: 160px; height: 40px; font-size: 15px; background-color: cornflowerblue;" />
+                                <!-- Modal Popup -->
+                                <div id="MyPopup01" class="modal fade" role="dialog">
+                                    <div class="modal-dialog">
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">
+                                                &times;</button>
+                                            </div>
+                                            <div>
+                                                <img src="../Image/arsik.jpg" style="height: 150px; width: 240px;">
+                                                <h2>Ikan Arsik<br>
+                                                    <p>Rp50.000</p>
+                                                </h2>
+                                                <p>Ikan Arsik adalah ikan mas berbumbu kuning dengan rasa asam, pedas dan pekat bumbu ini merupakan hidangan tradisional suku Batak.Kuliner khas Batak ini sangat terkenal, khususnya di daerah Toba Samosir dan
+                                                    Tapanuli Utara.Dilansir dari laman negerikuindonesia, Arsik Ikan Mas merupakan salah satu makanan tradisional yang berasal dari masyarakat Batak Toba di daerah Toba Samosir dan Tapanuli Utara, Sumatera
+                                                    Utara. Makanan ini sudah ada sejak dahulu kala dan merupakan makanan tradisional yang diwariskan oleh nenek moyang mereka secara turun-temurun.</p><br>
+                                                <img src="../Image/napidar.jpg" style="height: 150px; width: 250px;">
+                                                <h2>Napinandar<br>
+                                                    <p>Rp70.000</p>
+                                                </h2>
+                                                <p>Napinadar adalah Makanan Khas Batak , Jenis yang satu ini merupakan makanan yang bahannya terdiri dari ayam segar yang kemudian dibumbui dengan bumbu khas Batak.Satu lagi ciri khas napinadar yaitu campuran
+                                                    dari protein yang digunakan seperti darah ayam. Oleh karenanya, wisatawan muslim terkadang tak dapat menikmati napidar. Namun kini napinadar dapat diolah tanpa darah dan dapat dinikmati semua kalangan.Sebetulnya
+                                                    napinadar pakai ayam kampung campur darah, biar jadi 'halal' tidak pakai darah tetapi dicampur dengan santan</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal">
+                                                Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="button" id="btnShowPopup02" value="Diskon" class="btn btn-info btn-lg" style="width: 160px; height: 40px; font-size: 15px; background-color: rgb(226, 230, 16);" />
+                                <!-- Modal Popup -->
+                                <div id="MyPopup02" class="modal fade" role="dialog">
+                                    <div class="modal-dialog">
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">
+                                                &times;</button>
+                                            </div>
+                                            <div>
+                                                <h2>Diskon Makanan</h2><br>
+                                                <img src="../Image/arsik.jpg" style="height: 150px; width: 240px;">
+                                                <h2>Ikan Arsik<br>
+                                                    <p>Rp 50.000</p>
+                                                </h2>
+                                                <p><b>Diskon 50% => Rp 25.000</b></p><br><br>
+                                                <img src="../Image/napidar.jpg" style="height: 150px; width: 250px;">
+                                                <h2>Napinadar<br>
+                                                    <p>Rp 80.000</p>
+                                                </h2>
+                                                <p><b>Diskon 50% => Rp 40.000</b></p><br><br>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal">
+                                                Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="button" id="btnShowPopup03" value="Biaya Transportasi" class="btn btn-info btn-lg" style="width: 160px; height: 40px; font-size: 15px; background-color: rgb(230, 16, 62);" />
+                                <!-- Modal Popup -->
+                                <div id="MyPopup03" class="modal fade" role="dialog">
+                                    <div class="modal-dialog">
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">
+                                                &times;</button>
+                                            </div>
+                                            <div>
+                                                <h5>Menghitung estimasi biaya perjalanan</h5>
+                                                <br>Daftar Kota:
+                                                <ol>
+                                                    <li>Medan</li>
+                                                    <li>Pematang Siantar</li>
+                                                    <li>Kisaran</li>
+                                                    <li>Parapat</li>
+                                                    <li>Palembang</li>
+                                                    <li>Banda Lampung</li>
+                                                    <li>Batam</li>
+                                                    <li>Pekanbaru</li>
+                                                    <li>Padang</li>
+                                                    <li>Jambi</li>
+                                                    <li>Bengkulu</li>
+                                                    <li>Banda Aceh</li>
+                                                    <li>Jakarta</li>
+                                                    <li>Bandung</li>
+                                                    <li>Pekalongan</li>
+                                                </ol>
+                                                <form onsubmit="return false">
+                                                    <div class="container" id="kotaContainer">
+                                                        <label>Pencarian: </label>
+                                                        <div class="form-group mx-sm-3 mb-2">
+                                                            <input type="text" class="form-control" id="input_form" placeholder="No. Kota anda.." style="width: 100%;">
+                                                        </div>
+                                                        <button class="btn btn-outline-primary" id="tombol_form">Cari</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal">
+                                                Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingTwo" style="background: linear-gradient(to right, #e6e6e6,#e6e6e6);">
+                <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="background-color:rgb(103, 109, 109); color: white;">
+                    <b>Aceh</b>
+                  </button>
+                </h2>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                    <div class="card" style="width: 100%;">
+                        <img src="../Image/masjid.jpg" class="card-img-top" alt="..." id="imgWisata" style="width: 100%; height: 500px;">
+                        <h3>Masjid Baiturrahman</h3>
+                        <p>Masjid ini berdiri pada tahun 1606-1636, tepatnya pada saat pemerintahan Sultan Iskandar Muda. Masjid ini awalnya dibangun dengan tujuan untuk dijadikan sebagai pusat pengajaran ilmu agama yang ada di Nusantara. Tempat wisata Aceh,
+                            berupa Masjid besar ini memiliki interior dan eksterior yang memiliki gaya Kesultanan Turki Ustamani yang sangat khas. Bangunan masjid ini didominasi dengan warna putih dengan kubah hitam yang berukuran besar dan terdapat 7
+                            menara yang mengelilinginya.</p>
+                        <div class="container" id="containerBtn">
+                            <input type="button" id="btnShowPopup1" value="Baca Selengkapnya" class="btn btn-info btn-lg" style="width: 160px; height: 40px; font-size: 15px;" />
+                            <!-- Modal Popup -->
+                            <div id="MyPopup1" class="modal fade" role="dialog">
+                                <div class="modal-dialog">
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">
+                                                &times;</button>
+                                        </div>
+                                        <div>
+                                            <img src="../Image/masjid2.jpg" style="height: 150px; width: 100%;">
+                                            <br>Masjid ini mampu menampung hingga 1900 jamaah di dalamnya. Bagian luar dari masjid ini dihiasi dengan kolam serta air mancur yang ada di halaman masjid Baiturrahman ini. Tamannya yang dipenuhi rumput rumput
+                                            berwarna hijau segar, membuat pemandangan masjid ini tampak begitu sejuk dan asri.Masjid Raya yang asli dibangun pada tahun 1612 di masa pemerintahan Sultan Iskandar Muda. Ada juga yang mengatakan bahwa Masjid
+                                            Raya Baiturrahman yang asli dibangun lebih awal pada tahun 1292 oleh Sultan Alaidin Mahmudsyah. Masjid Kerajaan yang asli menampilkan atap jerami berlapis-lapis yang merupakan fitur khas arsitektur Aceh.Masyarakat
+                                            Aceh menggunakan Masjid Raya yang asli sebagai benteng pertempuran, dan menyerang pasukan Royal Belanda dari dalam masjid. Pasukan Royal Belanda pun membalas dengan menembakkan suar ke atap jerami masjid, yang
+                                            menyebabkan masjid terbakar. Jendral Van Swieten pun menjanjikan pemimpin lokal bahwa dia akan membangun kembali Masjid Raya dan menciptakan tempat yang hangat untuk permintaan maaf.
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">
+                                                Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="button" id="btnShowPopup11" value="Kuliner" class="btn btn-info btn-lg" style="width: 160px; height: 40px; font-size: 15px; background-color: cornflowerblue;" />
+                            <!-- Modal Popup -->
+                            <div id="MyPopup11" class="modal fade" role="dialog">
+                                <div class="modal-dialog">
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">
+                                        &times;</button>
+                                        </div>
+                                        <div>
+                                            <img src="../Image/mie.jpeg" style="height: 150px; width: 240px;">
+                                            <h2>Mie Aceh<br>
+                                                <p>Rp 20.000</p>
+                                            </h2>
+                                            <p>Mie Aceh merupakan makanan khas Aceh yang wajib dicicip oleh wisatawan. Biasanya enak disantap saat malam malam. Olahannya berupa mie hokkian atau mie lidi yang diracik dengan berbagai jenis rempah.Masakan mie
+                                                pedas khas Aceh di Indonesia. Mie kuning tebal dengan irisan daging sapi, daging kambing atau makanan laut (udang dan cumi) disajikan dalam sup sejenis kari yang gurih dan pedas. Mie Aceh tersedia dalam
+                                                tiga jenis, Mie Aceh Goreng (digoreng dan kering), Mie Aceh Tumis (dengan sedikit kuah) dan Mie Aceh Kuah (sup). Biasanya ditaburi bawang goreng dan disajikan bersama emping, potongan bawang merah, mentimun,
+                                                dan jeruk nipis.</p><br>
+                                            <img src="../Image/sayur.jpg" style="height: 150px; width: 250px;">
+                                            <h2>Sayur Pliek U<br>
+                                                <p>Rp30.000</p>
+                                            </h2>
+                                            <p>Sayur pliek u atau disebut kuwah pliek u khas Aceh ini sudah mulai jarang ditemukan. Sayur pliek u ini juga menjadi menu wajib dalam setiap hajatan yang diadakan masyarakat Aceh.Salah satu masakan seperti gulai
+                                                berasal dari Aceh. Masakan ini memiliki bahan dasar ampas dari sisa minyak kelapa tua yang telah melalui proses pemerasan minyaknya.</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">
+                                        Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="button" id="btnShowPopup12" value="Diskon" class="btn btn-info btn-lg" style="width: 160px; height: 40px; font-size: 15px; background-color: rgb(226, 230, 16);" />
+                            <!-- Modal Popup -->
+                            <div id="MyPopup12" class="modal fade" role="dialog">
+                                <div class="modal-dialog">
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">
+                                        &times;</button>
+                                        </div>
+                                        <div>
+                                            <h2>Diskon Makanan</h2><br>
+                                            <img src="../Image/mie.jpeg" style="height: 150px; width: 240px;">
+                                            <h2>Mie Aceh<br>
+                                                <p>Rp 20.000</p>
+                                            </h2>
+                                            <p><b>Diskon Tidak Tersedia</b></p><br><br>
+                                            <img src="../Image/sayur.jpg" style="height: 150px; width: 250px;">
+                                            <h2>Sayur Pliek U<br>
+                                                <p>Rp 30.000</p>
+                                            </h2>
+                                            <p><b>Diskon 50% => Rp 15.000</b></p><br><br>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">
+                                        Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="button" id="btnShowPopup13" value="Biaya Transportasi" class="btn btn-info btn-lg" style="width: 160px; height: 40px; font-size: 15px; background-color: rgb(230, 16, 62);" />
+                            <!-- Modal Popup -->
+                            <div id="MyPopup13" class="modal fade" role="dialog">
+                                <div class="modal-dialog">
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">
+                                        &times;</button>
+                                        </div>
+                                        <div>
+                                            <h5>Menghitung estimasi biaya perjalanan</h5>
+                                            <br>Daftar Kota:
+                                            <ol>
+                                                <li>Medan</li>
+                                                <li>Pematang Siantar</li>
+                                                <li>Kisaran</li>
+                                                <li>Parapat</li>
+                                                <li>Palembang</li>
+                                                <li>Banda Lampung</li>
+                                                <li>Batam</li>
+                                                <li>Pekanbaru</li>
+                                                <li>Padang</li>
+                                                <li>Jambi</li>
+                                                <li>Bengkulu</li>
+                                                <li>Banda Aceh</li>
+                                                <li>Jakarta</li>
+                                                <li>Bandung</li>
+                                                <li>Pekalongan</li>
+                                            </ol>
+                                            <form onsubmit="return false">
+                                                <div class="container" id="kotaContainer1">
+                                                    <label>Pencarian: </label>
+                                                    <div class="form-group mx-sm-3 mb-2">
+                                                        <input type="text" class="form-control" id="input_form1" placeholder="No. Kota anda.." style="width: 100%;">
+                                                    </div>
+                                                    <button class="btn btn-outline-primary" id="tombol_form1">Cari</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">
+                                        Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingThree" style="background: linear-gradient(to right, #e6e6e6,#e6e6e6);">
+                <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="background-color:rgb(103, 109, 109); color: white;">
+                    <b>Sumatera Barat</b>
+                  </button>
+                </h2>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                    <div class="card" style="width: 100%;">
+                        <img src="../Image/padang.jpg" class="card-img-top" alt="..." id="imgWisata" style="width: 100%; height: 500px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Rumah Gadang</h5>
+                            <p class="card-text">Indonesia memiliki ribuan pulau yang diwarnai dengan keberagaman kebudayaan yang berbeda di masing- masing pulau bahkan daerah. Namun ada satu daerah yang menjadi tempat lahirnya makanan terenak dan tato pertama, yaitu Sumatera
+                                Barat. Sumatera Barat ini juga di huni oleh masyarakat yang biasa di kenal dengan suku Minang atau suku Minangkabau. Bagi orang- orang Indonesia hal yang menjadi ikon Sumatera Barat adalah jam gadang, rumah gadang, atau
+                                masakan minang yang biasa terkenal dengan sebutan "Masakan Padang"</p>
+                            <div class="container" id="containerBtn">
+                                <input type="button" id="btnShowPopup2" value="Baca Selengkapnya" class="btn btn-info btn-lg" style="width: 160px; height: 40px; font-size: 15px;" />
+                                <!-- Modal Popup -->
+                                <div id="MyPopup2" class="modal fade" role="dialog">
+                                    <div class="modal-dialog">
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">
+                                                &times;</button>
+                                            </div>
+                                            <div>
+                                                <img src="../Image/tari.jpg" style="height: 150px; width: 100%;">
+                                                <br>Tari Piring Yang Menjadi Tarian Tradisional Kebudayaan Sumatera Barat.Menurut legenda, tari ini awalnya merupakan ritual ucapan rasa syukur masyarakat setempat kepada dewa-dewa setelah mendapatkan hasil
+                                                panen yang melimpah ruah. Ritual dilakukan dengan membawa sesaji dalam bentuk makanan yang diletakkan di dalam piring sembari melangkah dengan gerakan yang dinamis.Gerakan tari piring pada umumnya adalah
+                                                meletakkan dua piring di atas dua telapak tangan. Penari mengayunkan piring dalam gerakan-gerakan yang cepat, diselingi dengan mendentingkan piring atau dua cincin di jari penari terhadap piring yang dibawanya.
+                                                Pada akhir tarian, biasanya piring-piring yang dibawakan oleh para penari dilemparkan ke lantai dan para penari akan menari di atas pecahan-pecahan piring.
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal">
+                                                Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="button" id="btnShowPopup21" value="Kuliner" class="btn btn-info btn-lg" style="width: 160px; height: 40px; font-size: 15px; background-color: cornflowerblue;" />
+                                <!-- Modal Popup -->
+                                <div id="MyPopup21" class="modal fade" role="dialog">
+                                    <div class="modal-dialog">
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">
+                                        &times;</button>
+                                            </div>
+                                            <div>
+                                                <img src="../Image/gule.jpg" style="height: 150px; width: 240px;">
+                                                <h2>Gulai Itak<br>
+                                                    <p>Rp 40.000</p>
+                                                </h2>
+                                                <p>kuliner asal Sumatera Barat ini merupakan makanan yang berupa irisan daging bebek yang tipi dan dimasak bersama dengan bumbu rempah seperti cabe keriting hijau, laos, kunyit dan jahe.Masakan gulai berkuah
+                                                    santan yang pedas dari Minangkabau, dengan memakai otak sapi yang telah dipotong-potong sebagai bahan utamanya dan dimasak dalam bumbu gulai.</p><br>
+                                                <img src="../Image/palai.jpg" style="height: 150px; width: 250px;">
+                                                <h2>Palai Rinuak<br>
+                                                    <p>Rp20.000</p>
+                                                </h2>
+                                                <p>Palai Rinuak adalah Makanan yang berasal dari Maninjau Agam ini berupa ikan rinuak yang diberi campuran bumbu dan parutan kelapa.Palai ini nama lain dari pepes ikan. Jenis ikannya adalah Ikan Rinuak, ikan
+                                                    paling kecil yang hidup di Danau Maninjau. Ukurannya kannya hanya sebesar korek api dengan panjang hanya 2 sentimeter.Palai rinuak ini terbuat dari ikan yang dicampur dengan parutan kelapa berbumbu,
+                                                    dibungkus daun pisang dan dibakar, rasanya lezat.</p><br>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal">
+                                        Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="button" id="btnShowPopup22" value="Diskon" class="btn btn-info btn-lg" style="width: 160px; height: 40px; font-size: 15px; background-color: rgb(226, 230, 16);" />
+                                <!-- Modal Popup -->
+                                <div id="MyPopup22" class="modal fade" role="dialog">
+                                    <div class="modal-dialog">
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">
+                                        &times;</button>
+                                            </div>
+                                            <div>
+                                                <h2>Diskon Makanan</h2><br>
+                                                <img src="../Image/gule.jpg" style="height: 150px; width: 240px;">
+                                                <h2>Gulai Itak<br>
+                                                    <p>Rp 40.000</p>
+                                                </h2>
+                                                <p><b>Diskon 50% => Rp 20.000</b></p><br><br>
+                                                <img src="../Image/sayur.jpg" style="height: 150px; width: 250px;">
+                                                <h2>Palai Rinuak<br>
+                                                    <p>Rp 30.000</p>
+                                                </h2>
+                                                <p><b>Diskon 10% => Rp 27.000</b></p><br><br>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal">
+                                        Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="button" id="btnShowPopup23" value="Biaya Transportasi" class="btn btn-info btn-lg" style="width: 160px; height: 40px; font-size: 15px; background-color: rgb(230, 16, 62);" />
+                                <!-- Modal Popup -->
+                                <div id="MyPopup23" class="modal fade" role="dialog">
+                                    <div class="modal-dialog">
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">
+                                        &times;</button>
+                                            </div>
+                                            <div>
+                                                <h5>Menghitung estimasi biaya perjalanan</h5>
+                                                <br>Daftar Kota:
+                                                <ol>
+                                                    <li>Medan</li>
+                                                    <li>Pematang Siantar</li>
+                                                    <li>Kisaran</li>
+                                                    <li>Parapat</li>
+                                                    <li>Palembang</li>
+                                                    <li>Banda Lampung</li>
+                                                    <li>Batam</li>
+                                                    <li>Pekanbaru</li>
+                                                    <li>Padang</li>
+                                                    <li>Jambi</li>
+                                                    <li>Bengkulu</li>
+                                                    <li>Banda Aceh</li>
+                                                    <li>Jakarta</li>
+                                                    <li>Bandung</li>
+                                                    <li>Pekalongan</li>
+                                                </ol>
+                                                <form onsubmit="return false">
+                                                    <div class="container" id="kotaContainer2">
+                                                        <label>Pencarian: </label>
+                                                        <div class="form-group mx-sm-3 mb-2">
+                                                            <input type="text" class="form-control" id="input_form2" placeholder="No. Kota anda.." style="width: 100%;">
+                                                        </div>
+                                                        <button class="btn btn-outline-primary" id="tombol_form2">Cari</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal">
+                                        Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingFour" style="background: linear-gradient(to right, #e6e6e6,#e6e6e6);">
+                <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" style="background-color:rgb(103, 109, 109); color: white;">
+                    <b>Riau</b>
+                  </button>
+                </h2>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                <div class="card-body">
+                    <div class="card" style="width: 100%;">
+                        <img src="../Image/istana.jpg" class="card-img-top" alt="..." id="imgWisata" style="width: 100%; height: 500px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Istana Siak</h5>
+                            <p class="card-text">Bangunan yang mengadopsi gaya arsitektur Eropa, Arab dan Melayu ini dibangun pada tahun 1889 oleh Sultan Syarif Hasyim Abdul Jalil Syaifuddin. Di sana Kamu bisa melihat beberapa koleksi kerajaan patung perunggu Ratu Wilhelmina
+                                dari Belanda dan patung Sultan Syarif Hasyim I yang terbuat dari batu pualam berhiaskan berlian.</p>
+                            <div class="container" id="containerBtn">
+                                <input type="button" id="btnShowPopup3" value="Baca Selengkapnya" class="btn btn-info btn-lg" style="width: 160px; height: 40px; font-size: 15px;" />
+                                <!-- Modal Popup -->
+                                <div id="MyPopup3" class="modal fade" role="dialog">
+                                    <div class="modal-dialog">
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">
+                                                &times;</button>
+                                            </div>
+                                            <div>
+                                                <img src="../Image/istana2.jpg" style="height: 150px; width: 100%;">
+                                                <br>Istana yang memiliki gaya perpaduan Melayu, Timur Tengah dan Eropa ini, dirancang oleh seorang arsitek Jerman. Saat memasuki gerbang, Traveler disambut hijaunya rumput pada halaman yang sangat luas dimana
+                                                disana banyak meriam-meriam yang dulu digunakan untuk melawan musuh. Total keseluruhan meriam ada 8 buah.Istana Siak memiliki arsitektur bercorak Melayu, Arab, dan Eropa. Bangunannya terdiri dari dua lantai.
+                                                Lantai bawah dibagi menjadi enam ruangan sidang: Ruang tunggu para tamu, ruang tamu kehormatan, ruang tamu laki-laki, ruang tamu untuk perempuan, satu ruangan di samping kanan adalah ruang sidang kerajaan,
+                                                juga digunakan untuk ruang pesta. Lantai atas terbagi menjadi sembilan ruangan, berfungsi untuk istirahat Sultan serta para tamu istana. Di puncak bangunan terdapat enam patung burung elang sebagai lambang
+                                                keberanian Istana. Sementara pada halaman istana masih dapat dilihat delapan meriam menyebar ke berbagai sisi-sisi halaman istana, kemudian di sebelah kiri belakang istana terdapat bangunan kecil yang dahulunya
+                                                digunakan sebagai penjara sementara.
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal">
+                                                Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="button" id="btnShowPopup31" value="Kuliner" class="btn btn-info btn-lg" style="width: 160px; height: 40px; font-size: 15px; background-color: cornflowerblue;" />
+                                <!-- Modal Popup -->
+                                <div id="MyPopup31" class="modal fade" role="dialog">
+                                    <div class="modal-dialog">
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">
+                                        &times;</button>
+                                            </div>
+                                            <div>
+                                                <img src="../Image/patin.jpg" style="height: 150px; width: 240px;">
+                                                <h2>Gulai Ikan Patin<br>
+                                                    <p>Rp 60.000</p>
+                                                </h2>
+                                                <p>Gulai ikan patin merupakan makanan asli Riau yang sangat terkenal. Nama makanan tersebut adalah gulai ikan patin.Di Pekanbaru makanan ini tidak pernah sepi pengunjung. Gulai ikan patin memiliki cita rasa
+                                                    yang sangat lezat sehingga bisa membuat lidah kamu tak henti bergoyang.Kamu bisa menjumpai menu gulai ikan patin ini dengan mudah diberbagai restoran yang tersebar di Pekanbaru.Ciri khas gulai adalah
+                                                    bumbunya yang kaya rempah antara lain kunyit, ketumbar, lada, lengkuas, jahe, cabai merah, bawang merah, bawang putih, adas, pala, serai, kayu manis dan jintan yang dihaluskan, dicampur, kemudian dimasak
+                                                    dalam santan. Masakan ini yang memiliki ciri khas berwarna kuning karena pengaruh sari kunyit. Makanan ini dianggap sebagai bentuk lain dari kari, dan secara internasional sering disebut sebagai kari
+                                                    ala Indonesia, meskipun dalam seni kuliner Indonesia juga ditemukan kari.</p><br>
+                                                <img src="../Image/asam.jpg" style="height: 150px; width: 250px;">
+                                                <h2>Asam Pedas Ikan Baung<br>
+                                                    <p>Rp 40.000</p>
+                                                </h2>
+                                                <p>Makanan berbahan dasar ikan yang tidak kalah terkenal dengan makanan khas Riau lainnya yaitu ikan baung.Untuk mendapatkan olahan asam pedas ikan baung maka masyarakat Riau meramunya dengan menggunakan beragam
+                                                    macam rempah tradisional seperti bawang putih, jahe, bawang merah, lengkuas dan kunyit.</p><br>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal">
+                                        Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="button" id="btnShowPopup32" value="Diskon" class="btn btn-info btn-lg" style="width: 160px; height: 40px; font-size: 15px; background-color: rgb(226, 230, 16);" />
+                                <!-- Modal Popup -->
+                                <div id="MyPopup32" class="modal fade" role="dialog">
+                                    <div class="modal-dialog">
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">
+                                        &times;</button>
+                                            </div>
+                                            <div>
+                                                <h2>Diskon Makanan</h2><br>
+                                                <img src="../Image/patin.jpg" style="height: 150px; width: 240px;">
+                                                <h2>Gulai Itak<br>
+                                                    <p>Rp 60.000</p>
+                                                </h2>
+                                                <p><b>Diskon 50% => Rp 30.000</b></p><br><br>
+                                                <img src="../Image/asam.jpg" style="height: 150px; width: 250px;">
+                                                <h2>Palai Rinuak<br>
+                                                    <p>Rp 40.000</p>
+                                                </h2>
+                                                <p><b>Diskon 20% => Rp 32.000</b></p><br><br>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal">
+                                        Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="button" id="btnShowPopup33" value="Biaya Transportasi" class="btn btn-info btn-lg" style="width: 160px; height: 40px; font-size: 15px; background-color: rgb(230, 16, 62);" />
+                                <!-- Modal Popup -->
+                                <div id="MyPopup33" class="modal fade" role="dialog">
+                                    <div class="modal-dialog">
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">
+                                        &times;</button>
+                                            </div>
+                                            <div>
+                                                <h5>Menghitung estimasi biaya perjalanan</h5>
+                                                <br>Daftar Kota:
+                                                <ol>
+                                                    <li>Medan</li>
+                                                    <li>Pematang Siantar</li>
+                                                    <li>Kisaran</li>
+                                                    <li>Parapat</li>
+                                                    <li>Palembang</li>
+                                                    <li>Banda Lampung</li>
+                                                    <li>Batam</li>
+                                                    <li>Pekanbaru</li>
+                                                    <li>Padang</li>
+                                                    <li>Jambi</li>
+                                                    <li>Bengkulu</li>
+                                                    <li>Banda Aceh</li>
+                                                    <li>Jakarta</li>
+                                                    <li>Bandung</li>
+                                                    <li>Pekalongan</li>
+                                                </ol>
+                                                <form onsubmit="return false">
+                                                    <div class="container" id="kotaContainer3">
+                                                        <label>Pencarian: </label>
+                                                        <div class="form-group mx-sm-3 mb-2">
+                                                            <input type="text" class="form-control" id="input_form3" placeholder="No. Kota anda.." style="width: 100%;">
+                                                        </div>
+                                                        <button class="btn btn-outline-primary" id="tombol_form3">Cari</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal">
+                                        Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingFive" style="background: linear-gradient(to right, #e6e6e6,#e6e6e6);">
+                <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" style="background-color:rgb(103, 109, 109); color: white;">
+                    <b>Kepulauan Riau</b>
+                  </button>
+                </h2>
+            </div>
+            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                <div class="card-body">
+                    <div class="card" style="width: 100%;">
+                        <img src="../Image/biru.jpg" class="card-img-top" alt="..." id="imgWisata" style="height: 450px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Danau Biru</h5>
+                            <p class="card-text">Keberadaannya di kawasan Pulau Bintan, Kepulauan Riau yakni di daerah Galang Batang. Air di danau ini berwarna biru sesuai dengan namanya, pemandangan disekitarnya pun cantik dan di sekeliling danau dihiasi oleh beberapa bukit
+                                pasir. Danau Biru ini adalah bekas galian tambang pasir dan terbentuk di atas tanah liat yang cukup dalam.
+                            </p>
+                            <div class="container" id="containerBtn">
+                                <input type="button" id="btnShowPopup4" value="Baca Selengkapnya" class="btn btn-info btn-lg" style="width: 160px; height: 40px; font-size: 15px;" />
+                                <!-- Modal Popup -->
+                                <div id="MyPopup4" class="modal fade" role="dialog">
+                                    <div class="modal-dialog">
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">
+                                                &times;</button>
+                                            </div>
+                                            <div>
+                                                <img src="../Image/biru2.jpg" style="height: 150px; width: 100%;">
+                                                <br>Disaat cuaca lagi cerah, warna airnya akan memancarkkan warna biru muda yang sangat indah, sehingga mampu membius semua mata yang melihatnya. Meskipun begitu faktanya, sebenarnya danau ini bukanlah tempat
+                                                wisata namun tempat penambangan pasir yang masih aktif.Kepulauan Riau menjadi salah satu situs konservasi terumbu karang di Indonesia. Contoh situs konservasi terumbu karang di Kepulauan Riau adalah Karang
+                                                Alangkalam dan Karang Bali. Kekayaan biota laut menciptakan Laut Natuna menjadi salah satu lokasi selam scuba yang terkenal. Keindahan pantai juga membuat Kepulauan Riau semakin terkenal. Pantai-pantai tersebut
+                                                diantaranya Pantai Lagoi, Pantai Impian, Pantai Trikora, Pantai Nongsa, Pantai Sakerah, Pantai Loola, Pantai Padang Melang, Pantai Nusantara, Pantai Batu Berdaun, Pantai Indah, Pantai Tanjung Siambang, Pantai
+                                                Tanjung, Pantai Melur, Pantai Melayu, Pantai Pelawan, Pantai Sisi, dan Pantai Cemaga.
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal">
+                                                Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="button" id="btnShowPopup41" value="Kuliner" class="btn btn-info btn-lg" style="width: 160px; height: 40px; font-size: 15px; background-color: cornflowerblue;" />
+                                <!-- Modal Popup -->
+                                <div id="MyPopup41" class="modal fade" role="dialog">
+                                    <div class="modal-dialog">
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">
+                                        &times;</button>
+                                            </div>
+                                            <div>
+                                                <img src="../Image/sate.jpg" style="height: 150px; width: 240px;">
+                                                <h2>Satai Rusa<br>
+                                                    <p>Rp 15.000</p>
+                                                </h2>
+                                                <p>Kuliner berbahan daging rusa khas Kepulauan Riau tidak hanya berhenti pada sup. Kamu pun dapat menikmatinya dalam bentuk satai dengan pelengkap berupa bumbu kacang.Satai rusa menjadi makanan istimewa yang
+                                                    wajib dicoba saat pelesiran ke salah satu destinasi di Kepulauan Riau. Seperti umumnya satai, satai rusa diberi pelengkap juga berupa legitnya irisan ketupat yang bikin perut kenyang.</p><br>
+                                                <img src="../Image/gong.jpg" style="height: 150px; width: 250px;">
+                                                <h2>Gonggong<br>
+                                                    <p>Rp 20.000</p>
+                                                </h2>
+                                                <p>Gonggong adalah sejenis siput yang hidup di pinggir pantai. Makanan unik yang terbilang istimewa ini umumnya dipilih oleh masyarakat Kepulauan Riau sebagai camilan.Proses penyajiannya pun cukup sederhana,
+                                                    yang mana gonggong direbus hingga matang kemudian disajikan bersama sambal. Untuk menikmati gonggong, jangan lupa menyediakan tusuk gigi untuk memudahkan pengambilan daging gonggong dari cangkang.</p><br>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal">
+                                        Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="button" id="btnShowPopup42" value="Diskon" class="btn btn-info btn-lg" style="width: 160px; height: 40px; font-size: 15px; background-color: rgb(226, 230, 16);" />
+                                <!-- Modal Popup -->
+                                <div id="MyPopup42" class="modal fade" role="dialog">
+                                    <div class="modal-dialog">
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">
+                                        &times;</button>
+                                            </div>
+                                            <div>
+                                                <h2>Diskon Makanan</h2><br>
+                                                <img src="../Image/sate.jpg" style="height: 150px; width: 240px;">
+                                                <h2>Satai Rusa<br>
+                                                    <p>Rp 15.000</p>
+                                                </h2>
+                                                <p><b>Diskon Tidak Tersedia</b></p><br><br>
+                                                <img src="../Image/gong.jpg" style="height: 150px; width: 250px;">
+                                                <h2>Gonggong<br>
+                                                    <p>Rp 20.000</p>
+                                                </h2>
+                                                <p><b>Diskon Tidak Tersedia</b></p><br><br>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal">
+                                        Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="button" id="btnShowPopup43" value="Biaya Transportasi" class="btn btn-info btn-lg" style="width: 160px; height: 40px; font-size: 15px; background-color: rgb(230, 16, 62);" />
+                                <!-- Modal Popup -->
+                                <div id="MyPopup43" class="modal fade" role="dialog">
+                                    <div class="modal-dialog">
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">
+                                        &times;</button>
+                                            </div>
+                                            <div>
+                                                <h5>Menghitung estimasi biaya perjalanan</h5>
+                                                <br>Daftar Kota:
+                                                <ol>
+                                                    <li>Medan</li>
+                                                    <li>Pematang Siantar</li>
+                                                    <li>Kisaran</li>
+                                                    <li>Parapat</li>
+                                                    <li>Palembang</li>
+                                                    <li>Banda Lampung</li>
+                                                    <li>Batam</li>
+                                                    <li>Pekanbaru</li>
+                                                    <li>Padang</li>
+                                                    <li>Jambi</li>
+                                                    <li>Bengkulu</li>
+                                                    <li>Banda Aceh</li>
+                                                    <li>Jakarta</li>
+                                                    <li>Bandung</li>
+                                                    <li>Pekalongan</li>
+                                                </ol>
+                                                <form onsubmit="return false">
+                                                    <div class="container" id="kotaContainer4">
+                                                        <label>Pencarian: </label>
+                                                        <div class="form-group mx-sm-3 mb-2">
+                                                            <input type="text" class="form-control" id="input_form4" placeholder="No. Kota anda.." style="width: 100%;">
+                                                        </div>
+                                                        <button class="btn btn-outline-primary" id="tombol_form4">Cari</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal">
+                                        Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingSix" style="background: linear-gradient(to right, #e6e6e6,#e6e6e6);">
+                <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix" style="background-color:rgb(103, 109, 109); color: white;">
+                    <b>Jambi</b>
+                  </button>
+                </h2>
+            </div>
+            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                <div class="card-body">
+                    <div class="card" style="width: 100%;">
+                        <img src="../Image/penyu.jpg" class="card-img-top" alt="..." id="imgWisata" style="width: 100%; height: 450px">
+                        <div class="card-body">
+                            <h5 class="card-title">Pulau Penyu</h5>
+                            <p class="card-text">Menikmati eksotisme pulau tak berpenghuni, dengan hamparan pasirnya yang cantik serta melihat lebih dekat kehidupan penyu dihabitat aslinya menjadi satu hal yang tak akan terlupakan. Hal tersebut bisa Anda dapatkan dengan menjelajahi
+                                tempat wisata di pesisir timur Jambi, yakni Pulau Penyu.</p>
+                            <div class="container" id="containerBtn">
+                                <input type="button" id="btnShowPopup5" value="Baca Selengkapnya" class="btn btn-info btn-lg" style="width: 160px; height: 40px; font-size: 15px;" />
+                                <!-- Modal Popup -->
+                                <div id="MyPopup5" class="modal fade" role="dialog">
+                                    <div class="modal-dialog">
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">
+                                                &times;</button>
+                                            </div>
+                                            <div>
+                                                <img src="../Image/penyu2.jpg" style="height: 150px; width: 100%;">
+                                                <br>Pulau kecil ini merupakan salah satu tempat yang disukai para penyu untuk menyimpan telur-telurnya karena dirasa lebih aman sebab tak dihuni oleh manusia. Tak heran memang, karena akses menuju pulau
+                                                cantik ini belum terakomodir. Sehingga jarang ada orang dating. Sehingga Anda bisa menikmati pulau eksotis ini bagaikan pulau pribadi, kedengarannya menarik bukan? Tak hanya pantai berpasir putihnya, di
+                                                pulau ini juga dihiasi bebabtuan serta laguna dalam yang membuatnya makin memukau. Cocok banget buat hunting foto instagramable.Menawarkan wisata dengan konsep edukasi. Artinya, selain berwisata pengunjung
+                                                juga bisa mempelajari hal yang baru.Pengunjung diberi kesempatan untuk berinteraksi langsung dengan penyu yang ada.Tidak semua penyu dilepaskan karena hanya sebagian kecil saja yang dapat bertahan hidup
+                                                di alam bebas. Hal tersebut terjadi karena predator yang ada di laut. Selain itu, tingkat kemampuan tukik untuk beradaptasi juga mempengaruhi persentase penyu yang dapat di alam lepas
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal">
+                                                Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="button" id="btnShowPopup51" value="Kuliner" class="btn btn-info btn-lg" style="width: 160px; height: 40px; font-size: 15px; background-color: cornflowerblue;" />
+                                <!-- Modal Popup -->
+                                <div id="MyPopup51" class="modal fade" role="dialog">
+                                    <div class="modal-dialog">
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">
+                                        &times;</button>
+                                            </div>
+                                            <div>
+                                                <img src="../Image/pangsit.jpg" style="height: 150px; width: 240px;">
+                                                <h2>Mie Pangsit<br>
+                                                    <p>Rp 12.000</p>
+                                                </h2>
+                                                <p>Mie pangsit merupakan salah satu incaran para pelancor wisata kuliner Jambi. Nah, salah satu tempat makan di Jambi yang menjual mie pangsit paling enak di Jambi adalah But Kaw. Tekstur mi yang kenyal dipadukan
+                                                    dengan kuah yang rich dan topping daging babi yang lezat, dijamin akan memaksimalkan wisata kuliner di Jambi kamu dan keluarga!</p><br>
+                                                <img src="../Image/gado.jpg" style="height: 150px; width: 250px;">
+                                                <h2>Gado-gado Bude<br>
+                                                    <p>Rp 15.000</p>
+                                                </h2>
+                                                <p>Gado-gado Bude ini merupakan kuliner legendaris di kota Jambi yang alamatnya berada di Simpang Pulai, seberang hotel Aston.Salah satu makanan khas yang berasal dari Indonesia yang berupa sayur-sayuran yang
+                                                    direbus dan dicampur jadi satu, dengan bumbu kacang atau saus dari kacang tanah dan yang dihaluskan disertai irisan telur dan pada umumnya banyak yang menambahkan kentang rebus yang sudah dihaluskan
+                                                    untuk saus gado gado kentang rebus dimasak bersamaan dengan bumbu kacang kemudian di atasnya ditaburi bawang goreng. Sedikit emping goreng atau kerupuk (ada juga yang memakai kerupuk udang) juga ditambahkan.</p><br>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal">
+                                        Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="button" id="btnShowPopup52" value="Diskon" class="btn btn-info btn-lg" style="width: 160px; height: 40px; font-size: 15px; background-color: rgb(226, 230, 16);" />
+                                <!-- Modal Popup -->
+                                <div id="MyPopup52" class="modal fade" role="dialog">
+                                    <div class="modal-dialog">
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">
+                                        &times;</button>
+                                            </div>
+                                            <div>
+                                                <h2>Diskon Makanan</h2><br>
+                                                <img src="../Image/pangsit.jpg" style="height: 150px; width: 240px;">
+                                                <h2>Mie Pangsit<br>
+                                                    <p>Rp 12.000</p>
+                                                </h2>
+                                                <p><b>Diskon Tidak Tersedia</b></p><br><br>
+                                                <img src="../Image/gado.jpg" style="height: 150px; width: 250px;">
+                                                <h2>Gado-gado Bude<br>
+                                                    <p>Rp 15.000</p>
+                                                </h2>
+                                                <p><b>Diskon 20% => Rp 12.000</b></p><br><br>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal">
+                                        Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="button" id="btnShowPopup53" value="Biaya Transportasi" class="btn btn-info btn-lg" style="width: 160px; height: 40px; font-size: 15px; background-color: rgb(230, 16, 62);" />
+                                <!-- Modal Popup -->
+                                <div id="MyPopup53" class="modal fade" role="dialog">
+                                    <div class="modal-dialog">
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">
+                                        &times;</button>
+                                            </div>
+                                            <div>
+                                                <h5>Menghitung estimasi biaya perjalanan</h5>
+                                                <br>Daftar Kota:
+                                                <ol>
+                                                    <li>Medan</li>
+                                                    <li>Pematang Siantar</li>
+                                                    <li>Kisaran</li>
+                                                    <li>Parapat</li>
+                                                    <li>Palembang</li>
+                                                    <li>Banda Lampung</li>
+                                                    <li>Batam</li>
+                                                    <li>Pekanbaru</li>
+                                                    <li>Padang</li>
+                                                    <li>Jambi</li>
+                                                    <li>Bengkulu</li>
+                                                    <li>Banda Aceh</li>
+                                                    <li>Jakarta</li>
+                                                    <li>Bandung</li>
+                                                    <li>Pekalongan</li>
+                                                </ol>
+                                                <form onsubmit="return false">
+                                                    <div class="container" id="kotaContainer5">
+                                                        <label>Pencarian: </label>
+                                                        <div class="form-group mx-sm-3 mb-2">
+                                                            <input type="text" class="form-control" id="input_form5" placeholder="No. Kota anda.." style="width: 100%;">
+                                                        </div>
+                                                        <button class="btn btn-outline-primary" id="tombol_form5">Cari</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal">
+                                        Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingSeven" style="background: linear-gradient(to right, #e6e6e6,#e6e6e6);;">
+                <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven" style="background-color:rgb(103, 109, 109); color: white;">
+                    <b>Bengkulu</b>
+                  </button>
+                </h2>
+            </div>
+            <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+                <div class="card-body">
+                    <div class="card" style="width: 100%;">
+                        <img src="../Image/suci.jpg" class="card-img-top" alt="..." id="imgWisata" style="width: 100%; height: 500px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Pantai Sungai Suci</h5>
+                            <p class="card-text">Meski disebut dengan pantai, namun pantai ini bukan pantai sebenarnya karena areanya hanya berupa tebing batu dan hamparan air yang luas saja. Tidak ada pasir putih atau bibir pantai yang landai layaknya sebuah pantai pada
+                                umumnya.
+                            </p>
+                            <div class="container" id="containerBtn">
+                                <input type="button" id="btnShowPopup6" value="Baca Selengkapnya" class="btn btn-info btn-lg" style="width: 160px; height: 40px; font-size: 15px;" />
+                                <!-- Modal Popup -->
+                                <div id="MyPopup6" class="modal fade" role="dialog">
+                                    <div class="modal-dialog">
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">
+                                                &times;</button>
+                                            </div>
+                                            <div>
+                                                <img src="../Image/suci2.jpg" style="height: 150px;  width: 100%;">
+                                                <br>Inilah salah satu daya tarik Pantai Sungai Suci karena berbeda dari pantai pada umumnya. Jaraknya hanya sekitar 20 km saja dari kota Bengkulu, tentu dapat ditemph hanya dalam 45 menit saja dengan kecepatan
+                                                standar.Selain menjadi tempat objek wisata Pantai Sungai Suci ini juga merupakan salah satu lokasi mencari batu akik, di Pantai Sungai Suci ini juga terdapat Pulau kecil juga yang bisa di seberangin dengan
+                                                Jembatan gantung, yang terbuat dari tali tambang yang kuat dan dasar Jembatan terbuat dari potongan papan kayu yang tebal.
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal">
+                                                Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="button" id="btnShowPopup61" value="Kuliner" class="btn btn-info btn-lg" style="width: 160px; height: 40px; font-size: 15px; background-color: cornflowerblue;" />
+                                <!-- Modal Popup -->
+                                <div id="MyPopup61" class="modal fade" role="dialog">
+                                    <div class="modal-dialog">
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">
+                                        &times;</button>
+                                            </div>
+                                            <div>
+                                                <img src="../Image/bay.jpg" style="height: 150px; width: 240px;">
+                                                <h2>Baytat<br>
+                                                    <p>Rp 30.000</p>
+                                                </h2>
+                                                <p>bay tat adalah makanan khas para raja Bengkulu yang saat ini sudah bisa disantap oleh semua orang tanpa dipisahkan oleh status sosial. Biasanya kue bay tat dijual di pusat oleh-oleh Bengkulu.Bay tat sendiri
+                                                    mengandung maksud dari gabungan kata “bay” dan “tat”. Bay berarti induk sementara dan tat berarti kue tart, jadi bisa dibilang kalau bay tat adalah kue tartnya orang Bengkulu.Kue bay tat terbuat dari
+                                                    tepung gandum, telur ayam, mentega, dan gula pasir. Tekstur kue bay tat yang lembut berpadu rasa manis topping yang menggigit membuat kue ini disukai banyak orang.</p><br>
+                                                <img src="../Image/tempoyak.jpg" style="height: 150px; width: 250px;">
+                                                <h2>Tempoyak<br>
+                                                    <p>Rp 20.000</p>
+                                                </h2>
+                                                <p>Tempoyak adalah makanan yang unik. Bagiamana tidak, bahan yang digunakan untuk membuatnya harus difermentasi terlebih dahulu.Adapun bahan tersebut ialah buah durian yang kemudian difermentasi sehingga menciptakan
+                                                    cita rasa yang asam akibat proses fermentasi itu sendiri.</p><br>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal">
+                                        Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="button" id="btnShowPopup62" value="Diskon" class="btn btn-info btn-lg" style="width: 160px; height: 40px; font-size: 15px; background-color: rgb(226, 230, 16);" />
+                                <!-- Modal Popup -->
+                                <div id="MyPopup62" class="modal fade" role="dialog">
+                                    <div class="modal-dialog">
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">
+                                        &times;</button>
+                                            </div>
+                                            <div>
+                                                <h2>Diskon Makanan</h2><br>
+                                                <img src="../Image/bay.jpg" style="height: 150px; width: 240px;">
+                                                <h2>Baytat<br>
+                                                    <p>Rp 30.000</p>
+                                                </h2>
+                                                <p><b>Diskon Tidak Tersedia</b></p><br><br>
+                                                <img src="../Image/gado.jpg" style="height: 150px; width: 250px;">
+                                                <h2>Tempoyak<br>
+                                                    <p>Rp 20.000</p>
+                                                </h2>
+                                                <p><b>Diskon 50% => Rp 10.000</b></p><br><br>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal">
+                                        Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="button" id="btnShowPopup63" value="Biaya Transportasi" class="btn btn-info btn-lg" style="width: 160px; height: 40px; font-size: 15px; background-color: rgb(230, 16, 62);" />
+                                <!-- Modal Popup -->
+                                <div id="MyPopup63" class="modal fade" role="dialog">
+                                    <div class="modal-dialog">
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">
+                                        &times;</button>
+                                            </div>
+                                            <div>
+                                                <h5>Menghitung estimasi biaya perjalanan</h5>
+                                                <br>Daftar Kota:
+                                                <ol>
+                                                    <li>Medan</li>
+                                                    <li>Pematang Siantar</li>
+                                                    <li>Kisaran</li>
+                                                    <li>Parapat</li>
+                                                    <li>Palembang</li>
+                                                    <li>Banda Lampung</li>
+                                                    <li>Batam</li>
+                                                    <li>Pekanbaru</li>
+                                                    <li>Padang</li>
+                                                    <li>Jambi</li>
+                                                    <li>Bengkulu</li>
+                                                    <li>Banda Aceh</li>
+                                                    <li>Jakarta</li>
+                                                    <li>Bandung</li>
+                                                    <li>Pekalongan</li>
+                                                </ol>
+                                                <form onsubmit="return false">
+                                                    <div class="container" id="kotaContainer6">
+                                                        <label>Pencarian: </label>
+                                                        <div class="form-group mx-sm-3 mb-2">
+                                                            <input type="text" class="form-control" id="input_form6" placeholder="No. Kota anda.." style="width: 100%;">
+                                                        </div>
+                                                        <button class="btn btn-outline-primary" id="tombol_form6">Cari</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal">
+                                        Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingEight" style="background: linear-gradient(to right, #e6e6e6,#e6e6e6);">
+                <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight" style="background-color:rgb(103, 109, 109); color: white;">
+                    <b>Sumatera Selatan</b>
+                  </button>
+                </h2>
+            </div>
+            <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionExample">
+                <div class="card-body">
+                    <div class="card" style="width: 100%;">
+                        <img src="../Image/ampera.jpg" class="card-img-top" alt="..." id="imgWisata" style="height: 400px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Jembatan Ampera</h5>
+                            <p class="card-text">Sungai Musi yang merupakan salah satu sungai paling panjang di Indonesia. Kehidupan masyarakat sekitar tergambar di sungai Musi. Di atas sungai Musi membentang Jembatan Ampera yang begitu di kenal.</p>
+                            <div class="container" id="containerBtn">
+                                <input type="button" id="btnShowPopup7" value="Baca Selengkapnya" class="btn btn-info btn-lg" style="width: 160px; height: 40px; font-size: 15px;" />
+                                <!-- Modal Popup -->
+                                <div id="MyPopup7" class="modal fade" role="dialog">
+                                    <div class="modal-dialog">
+
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">
+                                                &times;</button>
+                                            </div>
+                                            <div>
+                                                <img src="../Image/ampera2.jpg" style="height: 150px;  width: 100%;">
+                                                <br>Pada salah satu pinggiran sungai, terdapat Benteng Kuto Besak yakni salah satu tempat wisata sejarah. Apabila mnyusuri sungai Musi, terasa kurang jika tidak mampir ke Pulau Kemaro, yang merupakan delta
+                                                sungai Musi. Pulau ini memiliki sejarah dan kisah yang legendaris.Panjang Jembatan 1.177 m, lebar 22 m (bagian tengah 71,90 m, berat 944 ton dan dilengkapi pembandul seberat 500 ton), semua bagian tengah
+                                                bisa diangkat agar kapal-kapal besar bisa lewat namun sejak tahun 1970 bagian tengah sudah tidak dapat diangkat lagi. Bandul pemberatnya pada tahun 1990 dibongkar karena dikhawatirkan dapat membahayakan.
+                                                Tinggi jembatan ini 11,5 m dari atas permukaan air, tinggi menara 63 m dari permukaan tanah dan jarak antara menara 75 m.
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal">
+                                                Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="button" id="btnShowPopup71" value="Kuliner" class="btn btn-info btn-lg" style="width: 160px; height: 40px; font-size: 15px; background-color: cornflowerblue;" />
+                                <!-- Modal Popup -->
+                                <div id="MyPopup71" class="modal fade" role="dialog">
+                                    <div class="modal-dialog">
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">
+                                        &times;</button>
+                                            </div>
+                                            <div>
+                                                <img src="../Image/tekwan.jpg" style="height: 150px; width: 240px;">
+                                                <h2>Tekwan<br>
+                                                    <p>Rp 20.000</p>
+                                                </h2>
+                                                <p>Tekwan adalah sajian sup berasal dari Palembang yang mirip bakso ikan. Tekwan dibuat dari ikan giling dengan campuran tepung sagu yang kemudian dibentuk bulatan seperti bakso.Sajian kuah tekwan terbuat dari
+                                                    kuah udang yang dimasak bersama bumbu sehingga memiliki rasa yang gurih. Selain itu tekwan juga biasa disajikan bersama pelengkap seperti sohun, jamur kuping, serta irisan bengkoang. Gak heran kalau
+                                                    tekwan banyak diminati karena punya sensasi rasa yang menghangatkan.</p><br>
+                                                <img src="../Image/burgo.jpg" style="height: 150px; width: 250px;">
+                                                <h2>Burgo<br>
+                                                    <p>Rp 25.000</p>
+                                                </h2>
+                                                <p>Burgo adalah makanan khas Sumatera Selatan terbuat dari campuran tepung beras dan tapioka disajikan dengan kuah gurih santan yang kental. Pelengkap sajian burgo adalah suwiran daging ikan dengan sambal dan
+                                                    sedikit perasan air jeruk nipis. Biasanya burgo disantap untuk menu sarapan oleh masyarakat Sumatera Selatan.</p><br>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal">
+                                        Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="button" id="btnShowPopup72" value="Diskon" class="btn btn-info btn-lg" style="width: 160px; height: 40px; font-size: 15px; background-color: rgb(226, 230, 16);" />
+                                <!-- Modal Popup -->
+                                <div id="MyPopup72" class="modal fade" role="dialog">
+                                    <div class="modal-dialog">
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">
+                                        &times;</button>
+                                            </div>
+                                            <div>
+                                                <h2>Diskon Makanan</h2><br>
+                                                <img src="../Image/tekwan.jpg" style="height: 150px; width: 240px;">
+                                                <h2>Tekwan<br>
+                                                    <p>Rp 20.000</p>
+                                                </h2>
+                                                <p><b>Diskon Tidak Tersedia</b></p><br><br>
+                                                <img src="../Image/burgo.jpg" style="height: 150px; width: 250px;">
+                                                <h2>Burgo<br>
+                                                    <p>Rp 25.000</p>
+                                                </h2>
+                                                <p><b>Diskon Tidak Tersedia</b></p><br><br>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal">
+                                        Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="button" id="btnShowPopup73" value="Biaya Transportasi" class="btn btn-info btn-lg" style="width: 160px; height: 40px; font-size: 15px; background-color: rgb(230, 16, 62);" />
+                                <!-- Modal Popup -->
+                                <div id="MyPopup73" class="modal fade" role="dialog">
+                                    <div class="modal-dialog">
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">
+                                        &times;</button>
+                                            </div>
+                                            <div>
+                                                <h5>Menghitung estimasi biaya perjalanan</h5>
+                                                <br>Daftar Kota:
+                                                <ol>
+                                                    <li>Medan</li>
+                                                    <li>Pematang Siantar</li>
+                                                    <li>Kisaran</li>
+                                                    <li>Parapat</li>
+                                                    <li>Palembang</li>
+                                                    <li>Banda Lampung</li>
+                                                    <li>Batam</li>
+                                                    <li>Pekanbaru</li>
+                                                    <li>Padang</li>
+                                                    <li>Jambi</li>
+                                                    <li>Bengkulu</li>
+                                                    <li>Banda Aceh</li>
+                                                    <li>Jakarta</li>
+                                                    <li>Bandung</li>
+                                                    <li>Pekalongan</li>
+                                                </ol>
+                                                <form onsubmit="return false">
+                                                    <div class="container" id="kotaContainer7">
+                                                        <label>Pencarian: </label>
+                                                        <div class="form-group mx-sm-3 mb-2">
+                                                            <input type="text" class="form-control" id="input_form7" placeholder="No. Kota anda.." style="width: 100%;">
+                                                        </div>
+                                                        <button class="btn btn-outline-primary" id="tombol_form7">Cari</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal">
+                                        Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingNine" style="background: linear-gradient(to right, #e6e6e6,#e6e6e6);">
+                <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine" style="background-color:rgb(103, 109, 109); color: white;">
+                    <b>Kep. Bangka Belitung</b>
+                  </button>
+                </h2>
+            </div>
+            <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordionExample">
+                <div class="card-body">
+                    <div class="card" style="width: 100%;">
+                        <img src="../Image/bangka.jpg" class="card-img-top" alt="..." id="imgWisata" style="height: 400px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Pantai Tanjung Kerasak</h5>
+                            <p class="card-text">Berwisata ke daerah salah satu penghasil timah terbesar di Indonesia, Bangka Belitung, anda akan ditawari dengan segala pesona pantainya yang memukau dan beragam. Daerah yang berjulukan Karibia dari Timur ini memang memiliki
+                                sejumlah kawasan pantai dengan pemandangan yang masih alami sehingga wajib untuk anda kunjungi bila sedang berada di Bangka Belitung.</p>
+                            <div class="container" id="containerBtn">
+                                <input type="button" id="btnShowPopup8" value="Baca Selengkapnya" class="btn btn-info btn-lg" style="width: 160px; height: 40px; font-size: 15px;" />
+                                <!-- Modal Popup -->
+                                <div id="MyPopup8" class="modal fade" role="dialog">
+                                    <div class="modal-dialog">
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">
+                                                &times;</button>
+                                            </div>
+                                            <div>
+                                                <img src="../Image/bangka2.jpg" style="height: 150px;  width: 100%;">
+                                                <br>Kawasan wisata Pantai Tanjung Kerasak buka setiap hari dengan jam buka atau operasional dari pagi (sunset) hingga menjelang malam (sunrise). Namun, bila di akhir pekan akan ada banyak pengunjung yang
+                                                berdatangan, sehingga akan menjadi sangat ramai. Untuk biaya masuknya sendiri GRATIS, namun Anda cukup membayar biaya seperti biaya parkir.Pantai ini menawarkan pemandangan yang sangat indah dengan air laut
+                                                kebiruan yang jernih.Di sekitar pantai terdapat bebatuan granit berbagai ukuran berbaris di garis pantai. Pantai ini sangat populer di kalangan turis lokal ataupun internasional. Fasilitas yang ada di pantai
+                                                ini meliputi gazebo untuk bersantai, tempat parkir, toilet, tempat bilas, mushala dan berbagai kedai makanan. Di dekat pantai pun juga terdapat kawasan hutan mangrove yang bisa dikunjungi oleh pengunjung
+                                                selepas bermain air di Pantai Tanjung Kerasak
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal">
+                                                Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="button" id="btnShowPopup81" value="Kuliner" class="btn btn-info btn-lg" style="width: 160px; height: 40px; font-size: 15px; background-color: cornflowerblue;" />
+                                <!-- Modal Popup -->
+                                <div id="MyPopup81" class="modal fade" role="dialog">
+                                    <div class="modal-dialog">
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">
+                                        &times;</button>
+                                            </div>
+                                            <div>
+
+                                                <img src="../Image/martabak.jpg" style="height: 150px; width: 240px;">
+                                                <h2>Martabak<br>
+                                                    <p>Rp 20.000</p>
+                                                </h2>
+                                                <p>Martabak bangka adalah makanan khas pulau Bangka yang kerap dijumpai di kota-kota besar di Indonesia. Martabak yang berasal dari Bangka ini pada mulanya disebut Hok Lo Pan. Hok Lo Pan sendiri menurut cerita
+                                                    menunjuk pada orang Hakka dan bukan orang Hok Lo.Martabak bangka mempunyai cita rasa yang manis sehingga tak jarang dipanggil dengan martabak manis. Makanan yang digemari hampir seluruh orang Indonesia
+                                                    ini terbuat dari bahan dasar tepung terigu dan mentega untuk dibuat adonan bulat yang membentang. Pada bagian atas adonan tepung yang sudah mengembang diberikan banyak topping, seperti cokelat meises,
+                                                    kacang tanah, keju, susu kental manis, dan wijen.</p><br>
+                                                <img src="../Image/getas.jpg" style="height: 150px; width: 250px;">
+                                                <h2>Getas<br>
+                                                    <p>Rp 15.000</p>
+                                                </h2>
+                                                <p>Getas atau orang Bangka menyebutnya kretek bercita rasa gurih. Tekstur dari getas yang renyah dan krenyes saat digigit bisa membuat setiap orang ketagihan saat melahapnya. Di Bangka sendiri, getas biasa
+                                                    dimakan bersama hidangan berkuah atau teman makan nasi. Salah satu kuliner yang cocok didampingi dengan getas adalah pempek. Jika ingin membeli getas, pastikan untuk memilih getas yang berasal dari daerah
+                                                    Belinyu karena sudah terkenal berkualitas dan enak.</p><br>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal">
+                                        Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="button" id="btnShowPopup82" value="Diskon" class="btn btn-info btn-lg" style="width: 160px; height: 40px; font-size: 15px; background-color: rgb(226, 230, 16);" />
+                                <!-- Modal Popup -->
+                                <div id="MyPopup82" class="modal fade" role="dialog">
+                                    <div class="modal-dialog">
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">
+                                        &times;</button>
+                                            </div>
+                                            <div>
+                                                <h2>Diskon Makanan</h2><br>
+                                                <img src="../Image/martabak.jpg" style="height: 150px; width: 240px;">
+                                                <h2>Martabak<br>
+                                                    <p>Rp 20.000</p>
+                                                </h2>
+                                                <p><b>Diskon Tidak Tersedia</b></p><br><br>
+                                                <img src="../Image/getas.jpg" style="height: 150px; width: 250px;">
+                                                <h2>Getas<br>
+                                                    <p>Rp 15.000</p>
+                                                </h2>
+                                                <p><b>Diskon Tidak Tersedia</b></p><br><br>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal">
+                                        Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="button" id="btnShowPopup83" value="Biaya Transportasi" class="btn btn-info btn-lg" style="width: 160px; height: 40px; font-size: 15px; background-color: rgb(230, 16, 62);" />
+                                <!-- Modal Popup -->
+                                <div id="MyPopup83" class="modal fade" role="dialog">
+                                    <div class="modal-dialog">
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">
+                                        &times;</button>
+                                            </div>
+                                            <div>
+                                                <h5>Menghitung estimasi biaya perjalanan</h5>
+                                                <br>Daftar Kota:
+                                                <ol>
+                                                    <li>Medan</li>
+                                                    <li>Pematang Siantar</li>
+                                                    <li>Kisaran</li>
+                                                    <li>Parapat</li>
+                                                    <li>Palembang</li>
+                                                    <li>Banda Lampung</li>
+                                                    <li>Batam</li>
+                                                    <li>Pekanbaru</li>
+                                                    <li>Padang</li>
+                                                    <li>Jambi</li>
+                                                    <li>Bengkulu</li>
+                                                    <li>Banda Aceh</li>
+                                                    <li>Jakarta</li>
+                                                    <li>Bandung</li>
+                                                    <li>Pekalongan</li>
+                                                </ol>
+                                                <form onsubmit="return false">
+                                                    <div class="container" id="kotaContainer8">
+                                                        <label>Pencarian: </label>
+                                                        <div class="form-group mx-sm-3 mb-2">
+                                                            <input type="text" class="form-control" id="input_form8" placeholder="No. Kota anda.." style="width: 100%;">
+                                                        </div>
+                                                        <button class="btn btn-outline-primary" id="tombol_form8">Cari</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal">
+                                        Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingTen" style="background: linear-gradient(to right, #e6e6e6,#e6e6e6);">
+                <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen" style="background-color:rgb(103, 109, 109); color: white;">
+                    <b>Lampung</b>
+                  </button>
+                </h2>
+            </div>
+            <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordionExample">
+                <div class="card-body">
+                    <div class="card" style="width: 100%;">
+                        <img src="../Image/taman.jpg" class="card-img-top" alt="..." id="imgWisata" style="height:400px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Taman Nasional Way Kambas</h5>
+                            <p class="card-text">Pusat konservasi besar ini menampung setidaknya 300 ekor gajah dan sampai saat ini terus bertambah. Pengunjung Way Kambas bisa melihat, bahkan berinteraksi langsung dengan gajah.</p>
+                            <div class="container" id="containerBtn">
+                                <input type="button" id="btnShowPopup9" value="Baca Selengkapnya" class="btn btn-info btn-lg" style="width: 160px; height: 40px; font-size: 15px;" />
+                                <!-- Modal Popup -->
+                                <div id="MyPopup9" class="modal fade" role="dialog">
+                                    <div class="modal-dialog">
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">
+                                                &times;</button>
+                                            </div>
+                                            <div>
+                                                <img src="../Image/taman2.jpg" style="height: 150px;  width: 100%;">
+                                                <br>Selain gajah, di tempat wisata Lampung berikut ini terdapat hewan-hewan lain seperti harimau dan beruang yang bisa ditemui di tempat wisata Bandar Lampung favorit ini. Untuk yang ingin berfoto, sebaiknya
+                                                menggunakan Lensa kamera jarak jauh.Taman Nasional Way Kambas berdiri pada tahun 1985 merupakan sekolah gajah pertama di Indonesia. Dengan nama awal Pusat Latihan Gajah (PLG) namun semenjak beberapa tahun
+                                                terakhir ini namanya berubah menjadi Pusat Konservasi Gajah (PKG) yang diharapkan mampu menjadi pusat konservasi gajah dalam penjinakan, pelatihan, perkembangbiakan dan konservasi. Hingga sekarang PKG ini
+                                                telah melatih sekitar 300 ekor gajah yang sudah disebar ke seluruh penjuru Tanah Air. Di Way Kambas juga tedapat International Rhino Foundation yang bertugas menjaga spesies badak agar tidak terancam punah.
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal">
+                                                Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="button" id="btnShowPopup91" value="Kuliner" class="btn btn-info btn-lg" style="width: 160px; height: 40px; font-size: 15px; background-color: cornflowerblue;" />
+                                <!-- Modal Popup -->
+                                <div id="MyPopup91" class="modal fade" role="dialog">
+                                    <div class="modal-dialog">
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">
+                                        &times;</button>
+                                            </div>
+                                            <div>
+                                                <img src="../Image/umbu.jpg" style="height: 150px; width: 240px;">
+                                                <h2>Umbu<br>
+                                                    <p>Rp 10.000</p>
+                                                </h2>
+                                                <p>Umbu ini tidak hanya menggunakan rotan sebagai bahan utamanya, namun anda juga bisa mencampurkan bahan lainnya yang sesuai dengan keinginan anda. Pada dasarnya masyarkat di kota Lampung sudah menjadikan
+                                                    umbu yang terbuat dari rotan ini sebagai makanan untuk dikonsumsi sehari-hari, namun seiring berjalannya waktu membuat membuat rotan pun semakin jarang di temui. Hal inilah yang membuat masyarakat di
+                                                    Lampung hanya membuat umbu saat ada acara adat ataupun acara-acara penting lainnya.</p><br>
+                                                <img src="../Image/engkak.jpg" style="height: 150px; width: 250px;">
+                                                <h2>Engkak<br>
+                                                    <p>Rp 20.000</p>
+                                                </h2>
+                                                <p>Engkak merupakan makanan yang memiliki rasa yang cukup manis. Bahan utama untuk pembuatan engkak ialah telur dan mentega yang dihaluskan menjadi tekstur yang sangat lembek. Engkak ini sangat cocok disantap
+                                                    sebagai makanan ringan dan juga sarapan. Bahan-bahan yang digunakan untuk pembuatan engkak ialah gula pasir, tepung ketan putih, telur ayam, susu kental manis, santan serta mentega.Selanjutnya semua
+                                                    bahan tesebut bisa anda campurkan menjadi satu lalu aduk hingga merata. Setelahnya anda bisa memasukan adonan tersebut ke dalam loyang yang sudah dioleskan mentega dan juga di beri alas kertas berih.
+                                                    Anda bisa memanggang kue ini layaknya lapis segit.</p><br>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal">
+                                        Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="button" id="btnShowPopup92" value="Diskon" class="btn btn-info btn-lg" style="width: 160px; height: 40px; font-size: 15px; background-color: rgb(226, 230, 16);" />
+                                <!-- Modal Popup -->
+                                <div id="MyPopup92" class="modal fade" role="dialog">
+                                    <div class="modal-dialog">
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">
+                                        &times;</button>
+                                            </div>
+                                            <div>
+                                                <h2>Diskon Makanan</h2><br>
+                                                <img src="../Image/umbu.jpg" style="height: 150px; width: 240px;">
+                                                <h2>Umbu<br>
+                                                    <p>Rp 10.000</p>
+                                                </h2>
+                                                <p><b>Diskon 20% => Rp 8.000</b></p><br><br>
+                                                <img src="../Image/engkak.jpg" style="height: 150px; width: 250px;">
+                                                <h2>Engkak<br>
+                                                    <p>Rp 20.000</p>
+                                                </h2>
+                                                <p><b>Diskon 50% => Rp 10.000</b></p><br><br>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal">
+                                        Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="button" id="btnShowPopup93" value="Biaya Transportasi" class="btn btn-info btn-lg" style="width: 160px; height: 40px; font-size: 15px; background-color: rgb(230, 16, 62);" />
+                                <!-- Modal Popup -->
+                                <div id="MyPopup93" class="modal fade" role="dialog">
+                                    <div class="modal-dialog">
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">
+                                        &times;</button>
+                                            </div>
+                                            <div>
+                                                <h5>Menghitung estimasi biaya perjalanan</h5>
+                                                <br>Daftar Kota:
+                                                <ol>
+                                                    <li>Medan</li>
+                                                    <li>Pematang Siantar</li>
+                                                    <li>Kisaran</li>
+                                                    <li>Parapat</li>
+                                                    <li>Palembang</li>
+                                                    <li>Banda Lampung</li>
+                                                    <li>Batam</li>
+                                                    <li>Pekanbaru</li>
+                                                    <li>Padang</li>
+                                                    <li>Jambi</li>
+                                                    <li>Bengkulu</li>
+                                                    <li>Banda Aceh</li>
+                                                    <li>Jakarta</li>
+                                                    <li>Bandung</li>
+                                                    <li>Pekalongan</li>
+                                                </ol>
+                                                <form onsubmit="return false">
+                                                    <div class="container" id="kotaContainer9">
+                                                        <label>Pencarian: </label>
+                                                        <div class="form-group mx-sm-3 mb-2">
+                                                            <input type="text" class="form-control" id="input_form9" placeholder="No. Kota anda.." style="width: 100%;">
+                                                        </div>
+                                                        <button class="btn btn-outline-primary" id="tombol_form9">Cari</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal">
+                                        Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="footer">
+        <div class="container" id="fotContainer">
+            <ul>
+                <li id="iconFooter"><a href="https://www.youtube.com/channel/UCviZmDYVb6CPyrb0PGnlvWg?view_as=subscriber" target="blink"><i class="fab fa-youtube"></i></a></li>
+                <li id="iconFooter"><a href="https://twitter.com/PariwisataSuma2" target="blink"><i class="fab fa-twitter"></i></a></li>
+                <li id="iconFooter"><a href="https://www.instagram.com/pariwisatasumatera_official/" target="blink"><i class="fab fa-instagram"></i></a></li>
+                <li id="iconFooter"><a href="https://www.facebook.com/pariwisata.sumatera.9/" target="blink"><i class="fab fa-facebook-f"></i></a></li>
+            </ul>
+        </div>
+        <div class="container" id="fotContainer2">
+            <ul>
+                <li><a href="#" id="aFooter">About Us</a></li>
+                <li><a href="faq.html" id="aFooter" target="blink">FAQs</a></li>
+                <li><a href="https://api.whatsapp.com/send?phone=6281396196984" id="aFooter" target="blink">Contact</a></li>
+            </ul>
+        </div>
+        <p id="pFooter">&copy; 2020 D3TI2 | Kelompok 11</p>
+    </div>
+
+    <script type="text/javascript">
+        document.getElementById("tombol_form").addEventListener("click", tampilkan_nilai_form);
+        document.getElementById("tombol_form1").addEventListener("click", tampilkan_nilai_form1);
+        document.getElementById("tombol_form2").addEventListener("click", tampilkan_nilai_form2);
+        document.getElementById("tombol_form3").addEventListener("click", tampilkan_nilai_form3);
+        document.getElementById("tombol_form4").addEventListener("click", tampilkan_nilai_form4);
+        document.getElementById("tombol_form5").addEventListener("click", tampilkan_nilai_form5);
+        document.getElementById("tombol_form6").addEventListener("click", tampilkan_nilai_form6);
+        document.getElementById("tombol_form7").addEventListener("click", tampilkan_nilai_form7);
+        document.getElementById("tombol_form8").addEventListener("click", tampilkan_nilai_form8);
+        document.getElementById("tombol_form9").addEventListener("click", tampilkan_nilai_form9);
+
+
+        function tampilkan_nilai_form() {
+            let nilai_form = document.getElementById("input_form").value;
+
+            if (nilai_form == 1) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form == 2) {
+                alert("Biaya Perjalanan\nBus              : Rp.250.000\nKereta Api   : Rp.80.000");
+            } else if (nilai_form == 3) {
+                alert("Biaya Perjalanan\nBus              : Rp.300.000\nKereta Api   : Rp.120.000");
+            } else if (nilai_form == 4) {
+                alert("Biaya Perjalanan\nBus              : Rp.50.000\nKereta Api   : Rp.60.000");
+            } else if (nilai_form == 5) {
+                alert("Biaya Perjalanan\nBus              : Rp.220.000\nKereta Api   : Rp.130.000");
+            } else if (nilai_form == 6) {
+                alert("Biaya Perjalanan\nBus              : Rp.20.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form == 7) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form == 8) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form == 9) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form == 10) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form == 11) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form == 12) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form == 13) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form == 14) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form == 15) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else {
+                alert("Keywords yang anda masukkan salah");
+            }
+        }
+
+        function tampilkan_nilai_form1() {
+            let nilai_form1 = document.getElementById("input_form1").value;
+
+            if (nilai_form1 == 1) {
+                alert("Biaya Perjalanan\nBus              : Rp.210.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form1 == 2) {
+                alert("Biaya Perjalanan\nBus              : Rp.250.000\nKereta Api   : Rp.80.000");
+            } else if (nilai_form1 == 3) {
+                alert("Biaya Perjalanan\nBus              : Rp.100.000\nKereta Api   : Rp.120.000");
+            } else if (nilai_form1 == 4) {
+                alert("Biaya Perjalanan\nBus              : Rp.150.000\nKereta Api   : Rp.60.000");
+            } else if (nilai_form1 == 5) {
+                alert("Biaya Perjalanan\nBus              : Rp.220.000\nKereta Api   : Rp.130.000");
+            } else if (nilai_form1 == 6) {
+                alert("Biaya Perjalanan\nBus              : Rp.20.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form1 == 7) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form1 == 8) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form1 == 9) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form1 == 10) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form1 == 11) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form1 == 12) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form1 == 13) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form1 == 14) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form1 == 15) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else {
+                alert("Keywords yang anda masukkan salah");
+            }
+
+        }
+
+        function tampilkan_nilai_form2() {
+            let nilai_form2 = document.getElementById("input_form2").value;
+
+            if (nilai_form2 == 1) {
+                alert("Biaya Perjalanan\nBus              : Rp.210.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form2 == 2) {
+                alert("Biaya Perjalanan\nBus              : Rp.250.000\nKereta Api   : Rp.80.000");
+            } else if (nilai_form2 == 3) {
+                alert("Biaya Perjalanan\nBus              : Rp.100.000\nKereta Api   : Rp.120.000");
+            } else if (nilai_form2 == 4) {
+                alert("Biaya Perjalanan\nBus              : Rp.150.000\nKereta Api   : Rp.60.000");
+            } else if (nilai_form2 == 5) {
+                alert("Biaya Perjalanan\nBus              : Rp.220.000\nKereta Api   : Rp.130.000");
+            } else if (nilai_form2 == 6) {
+                alert("Biaya Perjalanan\nBus              : Rp.20.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form2 == 7) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form2 == 8) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form2 == 9) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form2 == 10) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form2 == 11) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form2 == 12) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form2 == 13) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form2 == 14) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form2 == 15) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else {
+                alert("Keywords yang anda masukkan salah");
+            }
+        }
+
+        function tampilkan_nilai_form3() {
+            let nilai_form3 = document.getElementById("input_form3").value;
+
+            if (nilai_form3 == 1) {
+                alert("Biaya Perjalanan\nBus              : Rp.210.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form3 == 2) {
+                alert("Biaya Perjalanan\nBus              : Rp.250.000\nKereta Api   : Rp.80.000");
+            } else if (nilai_form3 == 3) {
+                alert("Biaya Perjalanan\nBus              : Rp.100.000\nKereta Api   : Rp.120.000");
+            } else if (nilai_form3 == 4) {
+                alert("Biaya Perjalanan\nBus              : Rp.150.000\nKereta Api   : Rp.60.000");
+            } else if (nilai_form3 == 5) {
+                alert("Biaya Perjalanan\nBus              : Rp.220.000\nKereta Api   : Rp.130.000");
+            } else if (nilai_form3 == 6) {
+                alert("Biaya Perjalanan\nBus              : Rp.20.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form3 == 7) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form3 == 8) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form3 == 9) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form3 == 10) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form3 == 11) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form3 == 12) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form3 == 13) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form3 == 14) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form3 == 15) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else {
+                alert("Keywords yang anda masukkan salah");
+            }
+        }
+
+        function tampilkan_nilai_form4() {
+            let nilai_form4 = document.getElementById("input_form4").value;
+
+            if (nilai_form4 == 1) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form4 == 2) {
+                alert("Biaya Perjalanan\nBus              : Rp.250.000\nKereta Api   : Rp.80.000");
+            } else if (nilai_form4 == 3) {
+                alert("Biaya Perjalanan\nBus              : Rp.300.000\nKereta Api   : Rp.120.000");
+            } else if (nilai_form4 == 4) {
+                alert("Biaya Perjalanan\nBus              : Rp.50.000\nKereta Api   : Rp.60.000");
+            } else if (nilai_form4 == 5) {
+                alert("Biaya Perjalanan\nBus              : Rp.220.000\nKereta Api   : Rp.130.000");
+            } else if (nilai_form4 == 6) {
+                alert("Biaya Perjalanan\nBus              : Rp.20.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form4 == 7) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form4 == 8) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form4 == 9) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form4 == 10) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form4 == 11) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form4 == 12) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form4 == 13) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form4 == 14) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form4 == 15) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else {
+                alert("Keywords yang anda masukkan salah");
+            }
+        }
+
+        function tampilkan_nilai_form5() {
+            let nilai_form5 = document.getElementById("input_form5").value;
+
+            if (nilai_form5 == 1) {
+                alert("Biaya Perjalanan\nBus              : Rp.210.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form5 == 2) {
+                alert("Biaya Perjalanan\nBus              : Rp.250.000\nKereta Api   : Rp.80.000");
+            } else if (nilai_form5 == 3) {
+                alert("Biaya Perjalanan\nBus              : Rp.100.000\nKereta Api   : Rp.120.000");
+            } else if (nilai_form5 == 4) {
+                alert("Biaya Perjalanan\nBus              : Rp.150.000\nKereta Api   : Rp.60.000");
+            } else if (nilai_form5 == 5) {
+                alert("Biaya Perjalanan\nBus              : Rp.220.000\nKereta Api   : Rp.130.000");
+            } else if (nilai_form5 == 6) {
+                alert("Biaya Perjalanan\nBus              : Rp.20.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form5 == 7) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form5 == 8) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form5 == 9) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form5 == 10) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form5 == 11) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form5 == 12) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form5 == 13) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form5 == 14) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form5 == 15) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else {
+                alert("Keywords yang anda masukkan salah");
+            }
+        }
+
+        function tampilkan_nilai_form6() {
+            let nilai_form6 = document.getElementById("input_form6").value;
+
+            if (nilai_form6 == 1) {
+                alert("Biaya Perjalanan\nBus              : Rp.210.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form6 == 2) {
+                alert("Biaya Perjalanan\nBus              : Rp.250.000\nKereta Api   : Rp.80.000");
+            } else if (nilai_form6 == 3) {
+                alert("Biaya Perjalanan\nBus              : Rp.100.000\nKereta Api   : Rp.120.000");
+            } else if (nilai_form6 == 4) {
+                alert("Biaya Perjalanan\nBus              : Rp.150.000\nKereta Api   : Rp.60.000");
+            } else if (nilai_form6 == 5) {
+                alert("Biaya Perjalanan\nBus              : Rp.220.000\nKereta Api   : Rp.130.000");
+            } else if (nilai_form6 == 6) {
+                alert("Biaya Perjalanan\nBus              : Rp.20.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form6 == 7) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form6 == 8) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form6 == 9) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form6 == 10) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form6 == 11) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form6 == 12) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form6 == 13) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form6 == 14) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form6 == 15) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else {
+                alert("Keywords yang anda masukkan salah");
+            }
+        }
+
+        function tampilkan_nilai_form7() {
+            let nilai_form7 = document.getElementById("input_form7").value;
+
+            if (nilai_form7 == 1) {
+                alert("Biaya Perjalanan\nBus              : Rp.210.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form7 == 2) {
+                alert("Biaya Perjalanan\nBus              : Rp.250.000\nKereta Api   : Rp.80.000");
+            } else if (nilai_form7 == 3) {
+                alert("Biaya Perjalanan\nBus              : Rp.100.000\nKereta Api   : Rp.120.000");
+            } else if (nilai_form7 == 4) {
+                alert("Biaya Perjalanan\nBus              : Rp.150.000\nKereta Api   : Rp.60.000");
+            } else if (nilai_form7 == 5) {
+                alert("Biaya Perjalanan\nBus              : Rp.220.000\nKereta Api   : Rp.130.000");
+            } else if (nilai_form7 == 6) {
+                alert("Biaya Perjalanan\nBus              : Rp.20.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form7 == 7) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form7 == 8) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form7 == 9) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form7 == 10) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form7 == 11) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form7 == 12) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form7 == 13) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form7 == 14) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form7 == 15) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else {
+                alert("Keywords yang anda masukkan salah");
+            }
+        }
+
+        function tampilkan_nilai_form8() {
+            let nilai_form8 = document.getElementById("input_form8").value;
+
+            if (nilai_form8 == 1) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form8 == 2) {
+                alert("Biaya Perjalanan\nBus              : Rp.250.000\nKereta Api   : Rp.80.000");
+            } else if (nilai_form8 == 3) {
+                alert("Biaya Perjalanan\nBus              : Rp.300.000\nKereta Api   : Rp.120.000");
+            } else if (nilai_form8 == 4) {
+                alert("Biaya Perjalanan\nBus              : Rp.50.000\nKereta Api   : Rp.60.000");
+            } else if (nilai_form8 == 5) {
+                alert("Biaya Perjalanan\nBus              : Rp.220.000\nKereta Api   : Rp.130.000");
+            } else if (nilai_form8 == 6) {
+                alert("Biaya Perjalanan\nBus              : Rp.20.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form8 == 7) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form8 == 8) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form8 == 9) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form8 == 10) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form8 == 11) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form8 == 12) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form8 == 13) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form8 == 14) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form8 == 15) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else {
+                alert("Keywords yang anda masukkan salah");
+            }
+        }
+
+        function tampilkan_nilai_form9() {
+            let nilai_form9 = document.getElementById("input_form9").value;
+
+            if (nilai_form9 == 1) {
+                alert("Biaya Perjalanan\nBus              : Rp.210.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form9 == 2) {
+                alert("Biaya Perjalanan\nBus              : Rp.250.000\nKereta Api   : Rp.80.000");
+            } else if (nilai_form9 == 3) {
+                alert("Biaya Perjalanan\nBus              : Rp.100.000\nKereta Api   : Rp.120.000");
+            } else if (nilai_form9 == 4) {
+                alert("Biaya Perjalanan\nBus              : Rp.150.000\nKereta Api   : Rp.60.000");
+            } else if (nilai_form9 == 5) {
+                alert("Biaya Perjalanan\nBus              : Rp.220.000\nKereta Api   : Rp.130.000");
+            } else if (nilai_form9 == 6) {
+                alert("Biaya Perjalanan\nBus              : Rp.20.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form9 == 7) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form9 == 8) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form9 == 9) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form9 == 10) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form9 == 11) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form9 == 12) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form9 == 13) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form9 == 14) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else if (nilai_form9 == 15) {
+                alert("Biaya Perjalanan\nBus              : Rp.200.000\nKereta Api   : Rp.100.000");
+            } else {
+                alert("Keywords yang anda masukkan salah");
+            }
+        }
+    </script>
+</body>
+
+</html>
